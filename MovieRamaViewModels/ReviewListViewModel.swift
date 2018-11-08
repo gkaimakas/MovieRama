@@ -21,22 +21,14 @@ public class ReviewListViewModel {
     public let forceFetchReviews: Action<Void, [ReviewViewModel], ProviderError>
     
     public init(movieId: Int, movieProvider: MovieProviderProtocol) {
-        weak var weakSelf: ReviewListViewModel!
         _reviews = MutableProperty([])
         reviews = Property(_reviews)
         
         _currentPage = MutableProperty(1)
         
-        fetchReviews = Action { _ in
-            return weakSelf
-                ._currentPage
-                .producer
-                .take(first: 1)
-                .promoteError(ProviderError.self)
-                .flatMap(.latest) { page -> SignalProducer<Page<Review>, ProviderError> in
-                    return movieProvider
-                        .fetchReviews(movieId: movieId, page: page)
-                }
+        fetchReviews = Action(state: _currentPage) { (page, _) in
+            return movieProvider
+                .fetchReviews(movieId: movieId, page: page)
                 .map { $0.results }
                 .map { list -> [ReviewViewModel] in
                     return list.map { ReviewViewModel(raw: $0) }
@@ -51,8 +43,6 @@ public class ReviewListViewModel {
                     return list.map { ReviewViewModel(raw: $0) }
                 }
         }
-        
-        weakSelf = self
         
         _reviews <~ fetchReviews
             .values

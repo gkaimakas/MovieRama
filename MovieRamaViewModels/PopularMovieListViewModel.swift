@@ -1,8 +1,8 @@
 //
-//  SimilarMovieListViewModel.swift
+//  PopularMovieListViewModel.swift
 //  MovieRamaViewModels
 //
-//  Created by George Kaimakas on 08/11/2018.
+//  Created by George Kaimakas on 09/11/2018.
 //  Copyright © 2018 George Kaimakas. All rights reserved.
 //
 
@@ -11,57 +11,56 @@ import MovieRamaModels
 import ReactiveSwift
 import Result
 
-public class SimilarMovieListViewModel {
+public class PopularMovieListViewModel {
     let _movies: MutableProperty<[MovieViewModel]>
     let _currentPage: MutableProperty<Int>
     
     public let movies: Property<[MovieViewModel]>
     
-    public let fetchSimilarMovies: Action<Void, [MovieViewModel], ProviderError>
-    public let forceFetchSimilarMovies: Action<Void, [MovieViewModel], ProviderError>
+    public let fetchMovies: Action<Void, [MovieViewModel], ProviderError>
+    public let forceFetchMovies: Action<Void, [MovieViewModel], ProviderError>
     
-    public init(movieId: Int,
-                movieProvider: MovieProviderProtocol) {
+    public init(movieProvider: MovieProviderProtocol) {
         
         _movies = MutableProperty([])
         movies = Property(_movies)
         
         _currentPage = MutableProperty(1)
         
-        fetchSimilarMovies = Action(state: _currentPage) { (page, _) in
+        fetchMovies = Action(state: _currentPage) { (page, _) in
             return movieProvider
-                .fetchSimilarMovies(movieId: movieId, page: page)
+                .fetchPopularMovieList(page: page)
+                .map { $0.results }
+                .map { list -> [MovieViewModel] in
+                    return list.map { MovieViewModel(raw: $0, movieProvider: movieProvider) }
+            }
+        }
+        
+        forceFetchMovies = Action { _ in
+            return movieProvider
+                .fetchPopularMovieList(page: 1)
                 .map { $0.results }
                 .map { list -> [MovieViewModel] in
                     return list.map { MovieViewModel(raw: $0, movieProvider: movieProvider) }
                 }
         }
         
-        forceFetchSimilarMovies = Action { _ in
-            return movieProvider
-                .fetchSimilarMovies(movieId: movieId, page: 1)
-                .map { $0.results }
-                .map { list -> [MovieViewModel] in
-                    return list.map { MovieViewModel(raw: $0, movieProvider: movieProvider) }
-                }
-        }
-        
-        _movies <~ fetchSimilarMovies
+        _movies <~ fetchMovies
             .values
             .map { [unowned self] result -> [MovieViewModel] in
                 return self._movies.value + result
             }
         
-        _movies <~ forceFetchSimilarMovies
+        _currentPage <~ fetchMovies
             .values
-        
-        _currentPage <~ fetchSimilarMovies
-            .values
-            .map { [unowned self] _ -> Int in
+            .map { [unowned self] _ in
                 return self._currentPage.value + 1
             }
         
-        _currentPage <~ forceFetchSimilarMovies
+        _movies <~ forceFetchMovies
+            .values
+        
+        _currentPage <~ forceFetchMovies
             .values
             .map { _ in 1 }
     }
