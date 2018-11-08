@@ -41,6 +41,8 @@
 		13C0F0A3219443430002E083 /* MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F039219442F00002E083 /* MovieRamaModels.framework */; };
 		13C0F0A8219443570002E083 /* MovieRamaCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F016219442E10002E083 /* MovieRamaCommon.framework */; };
 		13C0F0A9219443570002E083 /* MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */; };
+		13C0F0B2219451260002E083 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0B0219451260002E083 /* Assets.swift */; };
+		13C0F0B3219451260002E083 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0B1219451260002E083 /* Storyboard.swift */; };
 		1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */; };
 		46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */; };
 		4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */; };
@@ -245,6 +247,8 @@
 		13C0F085219443130002E083 /* MoviewRamaViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviewRamaViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0F08C219443130002E083 /* MoviewRamaViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewRamaViewsTests.swift; sourceTree = "<group>"; };
 		13C0F08E219443130002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0F0B0219451260002E083 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		13C0F0B1219451260002E083 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -419,10 +423,9 @@
 		13C0EFE22194420A0002E083 /* MovieRama */ = {
 			isa = PBXGroup;
 			children = (
+				13C0F0AD21944C930002E083 /* Resources */,
 				13C0EFE32194420A0002E083 /* AppDelegate.swift */,
 				13C0EFE52194420A0002E083 /* ViewController.swift */,
-				13C0EFE72194420A0002E083 /* Main.storyboard */,
-				13C0EFEA2194420C0002E083 /* Assets.xcassets */,
 				13C0EFEC2194420C0002E083 /* LaunchScreen.storyboard */,
 				13C0EFEF2194420C0002E083 /* Info.plist */,
 			);
@@ -550,6 +553,33 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		13C0F0AD21944C930002E083 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13C0EFEA2194420C0002E083 /* Assets.xcassets */,
+				13C0F0AF21944CC60002E083 /* Generated */,
+				13C0F0AE21944CAA0002E083 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		13C0F0AE21944CAA0002E083 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				13C0EFE72194420A0002E083 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		13C0F0AF21944CC60002E083 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F0B0219451260002E083 /* Assets.swift */,
+				13C0F0B1219451260002E083 /* Storyboard.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		CC6EC5CB0DE3B5BD3D4017A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -622,6 +652,7 @@
 			buildConfigurationList = 13C0F0082194420C0002E083 /* Build configuration list for PBXNativeTarget "MovieRama" */;
 			buildPhases = (
 				38C514E7CDAA75914F28F64F /* [CP] Check Pods Manifest.lock */,
+				13C0F0AC21944C300002E083 /* ShellScript */,
 				13C0EFDC2194420A0002E083 /* Sources */,
 				13C0EFDD2194420A0002E083 /* Frameworks */,
 				13C0EFDE2194420A0002E083 /* Resources */,
@@ -1009,6 +1040,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13C0F0AC21944C300002E083 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen config run --config swiftgen-assets.yml\n";
+		};
 		1B97FC274CABD075C1F68F61 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1484,8 +1532,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F0B3219451260002E083 /* Storyboard.swift in Sources */,
 				13C0EFE62194420A0002E083 /* ViewController.swift in Sources */,
 				13C0EFE42194420A0002E083 /* AppDelegate.swift in Sources */,
+				13C0F0B2219451260002E083 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1845,7 +1895,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 536C4E52F4837C7482461390 /* Pods-MovieRamaTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MovieRamaTests/Info.plist;
@@ -1866,7 +1916,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F127671300FC3983058A3B98 /* Pods-MovieRamaTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MovieRamaTests/Info.plist;
@@ -1887,7 +1937,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A6B677A2B8B7B47B058CB66 /* Pods-MovieRamaUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MovieRamaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1907,7 +1957,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7A1E819F83E8692CAD3C5CD /* Pods-MovieRamaUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MovieRamaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1985,7 +2035,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C31FBC945748CDCF7E2DFE38 /* Pods-MovieRamaCommonTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MovieRamaCommonTests/Info.plist;
@@ -2006,7 +2056,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80FA4E0DD33C6E07E7119B3B /* Pods-MovieRamaCommonTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MovieRamaCommonTests/Info.plist;
@@ -2085,7 +2135,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D5B784811623F13EB525A0F /* Pods-MovieRamaModelsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MovieRamaModelsTests/Info.plist;
@@ -2106,7 +2156,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 500BC3240B1AE23CC6336317 /* Pods-MovieRamaModelsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MovieRamaModelsTests/Info.plist;
@@ -2185,7 +2235,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84762D02BABBC08A3ECB27B0 /* Pods-MovieRamaViewModelsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MovieRamaViewModelsTests/Info.plist;
@@ -2206,7 +2256,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF842976CBB7525E88CC332B /* Pods-MovieRamaViewModelsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MovieRamaViewModelsTests/Info.plist;
@@ -2285,7 +2335,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MoviewRamaViewsTests/Info.plist;
@@ -2306,7 +2356,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73451D3C9DD3C6A7EB3B7328 /* Pods-MoviewRamaViewsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MoviewRamaViewsTests/Info.plist;

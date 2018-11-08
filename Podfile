@@ -1,4 +1,5 @@
 platform :ios, '11.4'
+inhibit_all_warnings!
 
 target 'MovieRama' do
   use_frameworks!
@@ -12,6 +13,7 @@ target 'MovieRama' do
   pod 'ReactiveSwift'
   
   pod 'SnapKit'
+  pod 'SwiftGen'
   pod 'Swinject'
 
   target 'MovieRamaTests' do
@@ -34,6 +36,8 @@ target 'MovieRamaCommon' do
   use_frameworks!
 
   pod 'ReactiveSwift'
+  
+  pod 'SwiftGen'
 
   target 'MovieRamaCommonTests' do
     inherit! :search_paths
