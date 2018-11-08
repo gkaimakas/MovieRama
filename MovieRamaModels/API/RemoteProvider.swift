@@ -12,7 +12,7 @@ import Foundation
 public class RemoteProvider {
     let sessionManager: SessionManager
     
-    public init(sessionManager: SessionManager) {
+    public init(sessionManager: SessionManager = SessionManager.default) {
         self.sessionManager = sessionManager
     }
 }

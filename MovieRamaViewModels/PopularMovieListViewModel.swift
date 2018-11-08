@@ -21,7 +21,6 @@ public class PopularMovieListViewModel {
     public let forceFetchMovies: Action<Void, [MovieViewModel], ProviderError>
     
     public init(movieProvider: MovieProviderProtocol) {
-        
         _movies = MutableProperty([])
         movies = Property(_movies)
         

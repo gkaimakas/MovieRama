@@ -26,7 +26,6 @@
 		13C0F04E219442F10002E083 /* MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F039219442F00002E083 /* MovieRamaModels.framework */; };
 		13C0F04F219442F10002E083 /* MovieRamaModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F039219442F00002E083 /* MovieRamaModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13C0F064219443020002E083 /* MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */; };
-		13C0F06B219443020002E083 /* MovieRamaViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F06A219443020002E083 /* MovieRamaViewModelsTests.swift */; };
 		13C0F06D219443020002E083 /* MovieRamaViewModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C0F05D219443020002E083 /* MovieRamaViewModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13C0F070219443020002E083 /* MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */; };
 		13C0F071219443020002E083 /* MovieRamaViewModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -100,6 +99,7 @@
 		13C0F13F2194F0300002E083 /* CrewMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F13E2194F0300002E083 /* CrewMemberViewModel.swift */; };
 		13C0F1412194F09A0002E083 /* CastMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1402194F09A0002E083 /* CastMemberViewModel.swift */; };
 		13C0F1432194F3DF0002E083 /* PopularMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1422194F3DF0002E083 /* PopularMovieListViewModel.swift */; };
+		13C0F1462194F76F0002E083 /* PopularMovieListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1442194F74D0002E083 /* PopularMovieListViewModelSpec.swift */; };
 		1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */; };
 		46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */; };
 		4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */; };
@@ -295,7 +295,6 @@
 		13C0F05D219443020002E083 /* MovieRamaViewModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieRamaViewModels.h; sourceTree = "<group>"; };
 		13C0F05E219443020002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C0F063219443020002E083 /* MovieRamaViewModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieRamaViewModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13C0F06A219443020002E083 /* MovieRamaViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRamaViewModelsTests.swift; sourceTree = "<group>"; };
 		13C0F06C219443020002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C0F07D219443130002E083 /* MoviewRamaViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoviewRamaViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0F07F219443130002E083 /* MoviewRamaViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviewRamaViews.h; sourceTree = "<group>"; };
@@ -363,6 +362,7 @@
 		13C0F13E2194F0300002E083 /* CrewMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMemberViewModel.swift; sourceTree = "<group>"; };
 		13C0F1402194F09A0002E083 /* CastMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastMemberViewModel.swift; sourceTree = "<group>"; };
 		13C0F1422194F3DF0002E083 /* PopularMovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewModel.swift; sourceTree = "<group>"; };
+		13C0F1442194F74D0002E083 /* PopularMovieListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewModelSpec.swift; sourceTree = "<group>"; };
 		1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -614,14 +614,14 @@
 			children = (
 				13C0F05D219443020002E083 /* MovieRamaViewModels.h */,
 				13C0F05E219443020002E083 /* Info.plist */,
+				13C0F1422194F3DF0002E083 /* PopularMovieListViewModel.swift */,
 				13C0F1252194A12A0002E083 /* MovieViewModel.swift */,
 				13C0F1362194E5DF0002E083 /* SimilarMovieListViewModel.swift */,
-				13C0F1382194E8DA0002E083 /* ReviewViewModel.swift */,
 				13C0F13A2194E94F0002E083 /* ReviewListViewModel.swift */,
+				13C0F1382194E8DA0002E083 /* ReviewViewModel.swift */,
 				13C0F13C2194EF930002E083 /* GenreViewModel.swift */,
 				13C0F13E2194F0300002E083 /* CrewMemberViewModel.swift */,
 				13C0F1402194F09A0002E083 /* CastMemberViewModel.swift */,
-				13C0F1422194F3DF0002E083 /* PopularMovieListViewModel.swift */,
 			);
 			path = MovieRamaViewModels;
 			sourceTree = "<group>";
@@ -629,8 +629,8 @@
 		13C0F069219443020002E083 /* MovieRamaViewModelsTests */ = {
 			isa = PBXGroup;
 			children = (
-				13C0F06A219443020002E083 /* MovieRamaViewModelsTests.swift */,
 				13C0F06C219443020002E083 /* Info.plist */,
+				13C0F1442194F74D0002E083 /* PopularMovieListViewModelSpec.swift */,
 			);
 			path = MovieRamaViewModelsTests;
 			sourceTree = "<group>";
@@ -1737,6 +1737,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaViewModelsTests/Pods-MovieRamaViewModelsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
@@ -1746,6 +1747,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
@@ -1951,7 +1953,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C0F06B219443020002E083 /* MovieRamaViewModelsTests.swift in Sources */,
+				13C0F1462194F76F0002E083 /* PopularMovieListViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

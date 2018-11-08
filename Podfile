@@ -60,7 +60,6 @@ target 'MovieRamaModels' do
 
   target 'MovieRamaModelsTests' do
     inherit! :search_paths
-
       pod 'Nimble'
       pod 'Quick'
   end
@@ -75,6 +74,7 @@ target 'MovieRamaViewModels' do
   target 'MovieRamaViewModelsTests' do
     inherit! :search_paths
 
+      pod 'Alamofire'
       pod 'Nimble'
       pod 'Quick'
   end
