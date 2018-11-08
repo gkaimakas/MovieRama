@@ -12,6 +12,7 @@ import ReactiveSwift
 import Result
 
 public class MovieRemoteProvider: RemoteProvider, MovieRemoteProviderProtocol {
+    
     public func fetchPopularMovieList(page: Int) -> SignalProducer<Page<MovieOverview>, RemoteProviderError> {
         return sessionManager
             .request(MovieRouter.fetchPopularMovieList(page: page))
@@ -40,5 +41,15 @@ public class MovieRemoteProvider: RemoteProvider, MovieRemoteProviderProtocol {
             .responseJSON()
             .promoteRemoteProviderError()
             .decode(using: MovieDecoder())
+    }
+    
+    public func fetchReviews(movieId: Int, page: Int) -> SignalProducer<Page<Review>, RemoteProviderError> {
+        return sessionManager
+            .request(MovieRouter.fetchReviews(movieId: movieId, page: page))
+            .validate()
+            .reactive
+            .responseJSON()
+            .promoteRemoteProviderError()
+            .decode(using: PagedReviewDecoder())
     }
 }

@@ -14,4 +14,5 @@ public protocol MovieRemoteProviderProtocol {
     func fetchPopularMovieList(page: Int) -> SignalProducer<Page<MovieOverview>, RemoteProviderError>
     func search(query: String, page: Int) -> SignalProducer<Page<MovieOverview>, RemoteProviderError>
     func fetchMovie(id: Int) -> SignalProducer<Movie, RemoteProviderError>
+    func fetchReviews(movieId: Int, page: Int) -> SignalProducer<Page<Review>, RemoteProviderError>
 }

@@ -13,6 +13,7 @@ enum MovieRouter: URLRequestConvertible {
     case fetchPopularMovieList(page: Int)
     case search(query: String, page: Int)
     case fetchMovie(id: Int)
+    case fetchReviews(movieId: Int, page: Int)
     
     var httpMethod: Alamofire.HTTPMethod {
         switch self {
@@ -21,6 +22,8 @@ enum MovieRouter: URLRequestConvertible {
         case .search:
             return .get
         case .fetchMovie:
+            return .get
+        case .fetchReviews:
             return .get
             
         }
@@ -33,6 +36,8 @@ enum MovieRouter: URLRequestConvertible {
         case .search:
             return URLEncoding.default
         case .fetchMovie:
+            return URLEncoding.default
+        case .fetchReviews:
             return URLEncoding.default
             
         }
@@ -68,6 +73,16 @@ enum MovieRouter: URLRequestConvertible {
                 parameters: [
                     "api_key": APIConfig.apiKey,
                     "append_to_response": "credits"
+                ],
+                body: nil
+            )
+            
+        case .fetchReviews(let movieId, let page):
+            return (
+                path: "/movie/\(movieId)/reviews",
+                parameters: [
+                    "api_key": APIConfig.apiKey,
+                    "page": page
                 ],
                 body: nil
             )
