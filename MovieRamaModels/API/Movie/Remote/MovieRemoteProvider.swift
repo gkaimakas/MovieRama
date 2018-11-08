@@ -52,4 +52,14 @@ public class MovieRemoteProvider: RemoteProvider, MovieRemoteProviderProtocol {
             .promoteRemoteProviderError()
             .decode(using: PagedReviewDecoder())
     }
+    
+    public func fetchSimilarMovies(movieId: Int, page: Int) -> SignalProducer<Page<MovieOverview>, RemoteProviderError> {
+        return sessionManager
+            .request(MovieRouter.fetchSimilarMovies(movieId: movieId, page: page))
+            .validate()
+            .reactive
+            .responseJSON()
+            .promoteRemoteProviderError()
+            .decode(using: PagedMovieOverviewDecoder(movieOverviewDecoder: MovieOverviewDecoder()))
+    }
 }

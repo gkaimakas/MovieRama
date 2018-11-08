@@ -66,7 +66,6 @@ class MovieRemoteProviderSpec: QuickSpec {
                     expect(result).toEventuallyNot(beNil(), timeout: 10)
                 }
             }
-
             
             describe("fetchReviews(movieId:, page:)") {
                 it("should fetch the reviews of the specified movie") {
@@ -74,6 +73,21 @@ class MovieRemoteProviderSpec: QuickSpec {
                     var result: Page<Review>? = nil
                     provider
                         .fetchReviews(movieId: 24428, page: 1)
+                        .on(value: { value in
+                            result = value
+                        })
+                        .start()
+                    
+                    expect(result).toEventuallyNot(beNil(), timeout: 10)
+                }
+            }
+            
+            describe("fetchReviews(movieId:, page:)") {
+                it("should fetch the similar movies with the specified movie") {
+                    
+                    var result: Page<MovieOverview>? = nil
+                    provider
+                        .fetchSimilarMovies(movieId: 24428, page: 1)
                         .on(value: { value in
                             result = value
                         })
