@@ -18,8 +18,8 @@ public struct MovieOverview {
     public let originalTitle: String?
     public let originalLanguage: String?
     
-    public let posterPath: URL?
-    public let backdropPath: URL?
+    public let posterURL: URL?
+    public let backdropURL: URL?
     
     public let hasVideo: Bool
     public let isAdult: Bool
@@ -38,8 +38,8 @@ public struct MovieOverview {
                 genreIds: [Int],
                 originalTitle: String?,
                 originalLanguage: String?,
-                posterPath: URL?,
-                backdropPath: URL?,
+                posterURL: URL?,
+                backdropURL: URL?,
                 hasVideo: Bool,
                 isAdult: Bool,
                 voteCount: Int,
@@ -54,8 +54,8 @@ public struct MovieOverview {
         self.genreIds = genreIds
         self.originalTitle = originalTitle
         self.originalLanguage = originalLanguage
-        self.posterPath = posterPath
-        self.backdropPath = backdropPath
+        self.posterURL = posterURL
+        self.backdropURL = backdropURL
         self.hasVideo = hasVideo
         self.isAdult = isAdult
         self.voteCount = voteCount
@@ -72,8 +72,8 @@ public struct MovieOverview {
                              genreIds: genreIds,
                              originalTitle: originalTitle,
                              originalLanguage: originalLanguage,
-                             posterPath: posterPath,
-                             backdropPath: backdropPath,
+                             posterURL: posterURL,
+                             backdropURL: backdropURL,
                              hasVideo: hasVideo,
                              isAdult: isAdult,
                              voteCount: voteCount,
