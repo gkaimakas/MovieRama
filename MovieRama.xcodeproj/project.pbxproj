@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01E3162D2A5B02AB307DBB6C /* Pods_MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C98DBEB95909D454A3F8C1 /* Pods_MovieRamaViewModels.framework */; };
+		0E984159835C56A101B630F6 /* Pods_MovieRamaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */; };
 		13C0EFE42194420A0002E083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE32194420A0002E083 /* AppDelegate.swift */; };
 		13C0EFE62194420A0002E083 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE52194420A0002E083 /* ViewController.swift */; };
 		13C0EFE92194420A0002E083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0EFE72194420A0002E083 /* Main.storyboard */; };
@@ -14,6 +16,40 @@
 		13C0EFEE2194420C0002E083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0EFEC2194420C0002E083 /* LaunchScreen.storyboard */; };
 		13C0EFF92194420C0002E083 /* MovieRamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFF82194420C0002E083 /* MovieRamaTests.swift */; };
 		13C0F0042194420C0002E083 /* MovieRamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0032194420C0002E083 /* MovieRamaUITests.swift */; };
+		13C0F01F219442E10002E083 /* MovieRamaCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F016219442E10002E083 /* MovieRamaCommon.framework */; };
+		13C0F026219442E10002E083 /* MovieRamaCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F025219442E10002E083 /* MovieRamaCommonTests.swift */; };
+		13C0F028219442E10002E083 /* MovieRamaCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C0F018219442E10002E083 /* MovieRamaCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13C0F02B219442E10002E083 /* MovieRamaCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F016219442E10002E083 /* MovieRamaCommon.framework */; };
+		13C0F02C219442E10002E083 /* MovieRamaCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F016219442E10002E083 /* MovieRamaCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13C0F042219442F10002E083 /* MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F039219442F00002E083 /* MovieRamaModels.framework */; };
+		13C0F049219442F10002E083 /* MovieRamaModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F048219442F10002E083 /* MovieRamaModelsTests.swift */; };
+		13C0F04B219442F10002E083 /* MovieRamaModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C0F03B219442F10002E083 /* MovieRamaModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13C0F04E219442F10002E083 /* MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F039219442F00002E083 /* MovieRamaModels.framework */; };
+		13C0F04F219442F10002E083 /* MovieRamaModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F039219442F00002E083 /* MovieRamaModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13C0F064219443020002E083 /* MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */; };
+		13C0F06B219443020002E083 /* MovieRamaViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F06A219443020002E083 /* MovieRamaViewModelsTests.swift */; };
+		13C0F06D219443020002E083 /* MovieRamaViewModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C0F05D219443020002E083 /* MovieRamaViewModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13C0F070219443020002E083 /* MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */; };
+		13C0F071219443020002E083 /* MovieRamaViewModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13C0F086219443130002E083 /* MoviewRamaViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F07D219443130002E083 /* MoviewRamaViews.framework */; };
+		13C0F08D219443130002E083 /* MoviewRamaViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F08C219443130002E083 /* MoviewRamaViewsTests.swift */; };
+		13C0F08F219443130002E083 /* MoviewRamaViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C0F07F219443130002E083 /* MoviewRamaViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13C0F092219443130002E083 /* MoviewRamaViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F07D219443130002E083 /* MoviewRamaViews.framework */; };
+		13C0F093219443130002E083 /* MoviewRamaViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F07D219443130002E083 /* MoviewRamaViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13C0F09D219443330002E083 /* MovieRamaCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F016219442E10002E083 /* MovieRamaCommon.framework */; };
+		13C0F0A2219443430002E083 /* MovieRamaCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F016219442E10002E083 /* MovieRamaCommon.framework */; };
+		13C0F0A3219443430002E083 /* MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F039219442F00002E083 /* MovieRamaModels.framework */; };
+		13C0F0A8219443570002E083 /* MovieRamaCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F016219442E10002E083 /* MovieRamaCommon.framework */; };
+		13C0F0A9219443570002E083 /* MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */; };
+		1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */; };
+		46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */; };
+		4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */; };
+		6030291E4A2C5E86A741A54E /* Pods_MovieRamaCommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EC5FEA449C83A07A488FCE /* Pods_MovieRamaCommonTests.framework */; };
+		8FFE5728CC26748839406438 /* Pods_MovieRamaViewModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C900F8E7D2754B0381BC9D /* Pods_MovieRamaViewModelsTests.framework */; };
+		9442F423D0F7104FD092CF81 /* Pods_MovieRamaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAD9966359FC359B11330D8 /* Pods_MovieRamaTests.framework */; };
+		95B1958FD7D1A407FE0C4DE3 /* Pods_MoviewRamaViewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66316C3E1D2D285212193BB8 /* Pods_MoviewRamaViewsTests.framework */; };
+		95E435412A5F3B3F83CD6907 /* Pods_MovieRamaCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B0AC1E967F6CB486A992A /* Pods_MovieRamaCommon.framework */; };
+		ECB3A9E1892AD7588DF9BB13 /* Pods_MoviewRamaViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12888EAF89336401AB94AFD8 /* Pods_MoviewRamaViews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +67,147 @@
 			remoteGlobalIDString = 13C0EFDF2194420A0002E083;
 			remoteInfo = MovieRama;
 		};
+		13C0F020219442E10002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F015219442E10002E083;
+			remoteInfo = MovieRamaCommon;
+		};
+		13C0F022219442E10002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0EFDF2194420A0002E083;
+			remoteInfo = MovieRama;
+		};
+		13C0F029219442E10002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F015219442E10002E083;
+			remoteInfo = MovieRamaCommon;
+		};
+		13C0F043219442F10002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F038219442F00002E083;
+			remoteInfo = MovieRamaModels;
+		};
+		13C0F045219442F10002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0EFDF2194420A0002E083;
+			remoteInfo = MovieRama;
+		};
+		13C0F04C219442F10002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F038219442F00002E083;
+			remoteInfo = MovieRamaModels;
+		};
+		13C0F065219443020002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F05A219443020002E083;
+			remoteInfo = MovieRamaViewModels;
+		};
+		13C0F067219443020002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0EFDF2194420A0002E083;
+			remoteInfo = MovieRama;
+		};
+		13C0F06E219443020002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F05A219443020002E083;
+			remoteInfo = MovieRamaViewModels;
+		};
+		13C0F087219443130002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F07C219443130002E083;
+			remoteInfo = MoviewRamaViews;
+		};
+		13C0F089219443130002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0EFDF2194420A0002E083;
+			remoteInfo = MovieRama;
+		};
+		13C0F090219443130002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F07C219443130002E083;
+			remoteInfo = MoviewRamaViews;
+		};
+		13C0F09A2194432B0002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F015219442E10002E083;
+			remoteInfo = MovieRamaCommon;
+		};
+		13C0F09E2194433B0002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F015219442E10002E083;
+			remoteInfo = MovieRamaCommon;
+		};
+		13C0F0A02194433B0002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F038219442F00002E083;
+			remoteInfo = MovieRamaModels;
+		};
+		13C0F0A42194434F0002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F015219442E10002E083;
+			remoteInfo = MovieRamaCommon;
+		};
+		13C0F0A62194434F0002E083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0EFD82194420A0002E083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0F05A219443020002E083;
+			remoteInfo = MovieRamaViewModels;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		13C0F030219442E10002E083 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				13C0F04F219442F10002E083 /* MovieRamaModels.framework in Embed Frameworks */,
+				13C0F02C219442E10002E083 /* MovieRamaCommon.framework in Embed Frameworks */,
+				13C0F071219443020002E083 /* MovieRamaViewModels.framework in Embed Frameworks */,
+				13C0F093219443130002E083 /* MoviewRamaViews.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0D5B784811623F13EB525A0F /* Pods-MovieRamaModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaModelsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaModelsTests/Pods-MovieRamaModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12888EAF89336401AB94AFD8 /* Pods_MoviewRamaViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviewRamaViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0EFE02194420A0002E083 /* MovieRama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieRama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0EFE32194420A0002E083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C0EFE52194420A0002E083 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +221,61 @@
 		13C0EFFF2194420C0002E083 /* MovieRamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieRamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0F0032194420C0002E083 /* MovieRamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRamaUITests.swift; sourceTree = "<group>"; };
 		13C0F0052194420C0002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0F016219442E10002E083 /* MovieRamaCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieRamaCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0F018219442E10002E083 /* MovieRamaCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieRamaCommon.h; sourceTree = "<group>"; };
+		13C0F019219442E10002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0F01E219442E10002E083 /* MovieRamaCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieRamaCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0F025219442E10002E083 /* MovieRamaCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRamaCommonTests.swift; sourceTree = "<group>"; };
+		13C0F027219442E10002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0F039219442F00002E083 /* MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0F03B219442F10002E083 /* MovieRamaModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieRamaModels.h; sourceTree = "<group>"; };
+		13C0F03C219442F10002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0F041219442F10002E083 /* MovieRamaModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieRamaModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0F048219442F10002E083 /* MovieRamaModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRamaModelsTests.swift; sourceTree = "<group>"; };
+		13C0F04A219442F10002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0F05B219443020002E083 /* MovieRamaViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieRamaViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0F05D219443020002E083 /* MovieRamaViewModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieRamaViewModels.h; sourceTree = "<group>"; };
+		13C0F05E219443020002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0F063219443020002E083 /* MovieRamaViewModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieRamaViewModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0F06A219443020002E083 /* MovieRamaViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRamaViewModelsTests.swift; sourceTree = "<group>"; };
+		13C0F06C219443020002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0F07D219443130002E083 /* MoviewRamaViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoviewRamaViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0F07F219443130002E083 /* MoviewRamaViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviewRamaViews.h; sourceTree = "<group>"; };
+		13C0F080219443130002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0F085219443130002E083 /* MoviewRamaViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviewRamaViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0F08C219443130002E083 /* MoviewRamaViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewRamaViewsTests.swift; sourceTree = "<group>"; };
+		13C0F08E219443130002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EC5FEA449C83A07A488FCE /* Pods_MovieRamaCommonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaCommonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500BC3240B1AE23CC6336317 /* Pods-MovieRamaModelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaModelsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaModelsTests/Pods-MovieRamaModelsTests.release.xcconfig"; sourceTree = "<group>"; };
+		536C4E52F4837C7482461390 /* Pods-MovieRamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaTests/Pods-MovieRamaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66316C3E1D2D285212193BB8 /* Pods_MoviewRamaViewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviewRamaViewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE1572105AB1F08FC3C74A2 /* Pods-MovieRamaModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaModels.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaModels/Pods-MovieRamaModels.release.xcconfig"; sourceTree = "<group>"; };
+		73451D3C9DD3C6A7EB3B7328 /* Pods-MoviewRamaViewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E745736CDAB31C92AC4B136 /* Pods-MoviewRamaViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViews/Pods-MoviewRamaViews.debug.xcconfig"; sourceTree = "<group>"; };
+		80FA4E0DD33C6E07E7119B3B /* Pods-MovieRamaCommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaCommonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaCommonTests/Pods-MovieRamaCommonTests.release.xcconfig"; sourceTree = "<group>"; };
+		84762D02BABBC08A3ECB27B0 /* Pods-MovieRamaViewModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaViewModelsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaViewModelsTests/Pods-MovieRamaViewModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A6B677A2B8B7B47B058CB66 /* Pods-MovieRamaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaUITests/Pods-MovieRamaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A08B0AC1E967F6CB486A992A /* Pods_MovieRamaCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B3E05C36555A1270D351A0 /* Pods-MovieRamaCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaCommon/Pods-MovieRamaCommon.release.xcconfig"; sourceTree = "<group>"; };
+		ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05C20C28C67028A17B5A760 /* Pods-MoviewRamaViews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViews.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViews/Pods-MoviewRamaViews.release.xcconfig"; sourceTree = "<group>"; };
+		BE6F4476C43ED11272D2F4AA /* Pods-MovieRama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRama.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRama/Pods-MovieRama.release.xcconfig"; sourceTree = "<group>"; };
+		C0C900F8E7D2754B0381BC9D /* Pods_MovieRamaViewModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaViewModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31FBC945748CDCF7E2DFE38 /* Pods-MovieRamaCommonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaCommonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaCommonTests/Pods-MovieRamaCommonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0A07538355DEC4742FF452 /* Pods-MovieRamaViewModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaViewModels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaViewModels/Pods-MovieRamaViewModels.debug.xcconfig"; sourceTree = "<group>"; };
+		E07A2056682CA5A1A34E2DC9 /* Pods-MovieRamaViewModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaViewModels.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaViewModels/Pods-MovieRamaViewModels.release.xcconfig"; sourceTree = "<group>"; };
+		E7A1E819F83E8692CAD3C5CD /* Pods-MovieRamaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaUITests/Pods-MovieRamaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7C98DBEB95909D454A3F8C1 /* Pods_MovieRamaViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF842976CBB7525E88CC332B /* Pods-MovieRamaViewModelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaViewModelsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaViewModelsTests/Pods-MovieRamaViewModelsTests.release.xcconfig"; sourceTree = "<group>"; };
+		EFBCF663A05CE18CC34A439A /* Pods-MovieRamaCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaCommon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaCommon/Pods-MovieRamaCommon.debug.xcconfig"; sourceTree = "<group>"; };
+		F127671300FC3983058A3B98 /* Pods-MovieRamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaTests/Pods-MovieRamaTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA8E113FB7A69C10D0F45701 /* Pods-MovieRamaModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaModels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaModels/Pods-MovieRamaModels.debug.xcconfig"; sourceTree = "<group>"; };
+		FCAD9966359FC359B11330D8 /* Pods_MovieRamaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE37D620345051DF7910C31F /* Pods-MovieRama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRama.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRama/Pods-MovieRama.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +283,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F04E219442F10002E083 /* MovieRamaModels.framework in Frameworks */,
+				13C0F02B219442E10002E083 /* MovieRamaCommon.framework in Frameworks */,
+				13C0F070219443020002E083 /* MovieRamaViewModels.framework in Frameworks */,
+				13C0F092219443130002E083 /* MoviewRamaViews.framework in Frameworks */,
+				1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9442F423D0F7104FD092CF81 /* Pods_MovieRamaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +303,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E984159835C56A101B630F6 /* Pods_MovieRamaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F013219442E10002E083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E435412A5F3B3F83CD6907 /* Pods_MovieRamaCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F01B219442E10002E083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F01F219442E10002E083 /* MovieRamaCommon.framework in Frameworks */,
+				6030291E4A2C5E86A741A54E /* Pods_MovieRamaCommonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F036219442F00002E083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F09D219443330002E083 /* MovieRamaCommon.framework in Frameworks */,
+				46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F03E219442F10002E083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F042219442F10002E083 /* MovieRamaModels.framework in Frameworks */,
+				4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F058219443020002E083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F0A2219443430002E083 /* MovieRamaCommon.framework in Frameworks */,
+				13C0F0A3219443430002E083 /* MovieRamaModels.framework in Frameworks */,
+				01E3162D2A5B02AB307DBB6C /* Pods_MovieRamaViewModels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F060219443020002E083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F064219443020002E083 /* MovieRamaViewModels.framework in Frameworks */,
+				8FFE5728CC26748839406438 /* Pods_MovieRamaViewModelsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F07A219443130002E083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F0A8219443570002E083 /* MovieRamaCommon.framework in Frameworks */,
+				13C0F0A9219443570002E083 /* MovieRamaViewModels.framework in Frameworks */,
+				ECB3A9E1892AD7588DF9BB13 /* Pods_MoviewRamaViews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F082219443130002E083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F086219443130002E083 /* MoviewRamaViews.framework in Frameworks */,
+				95B1958FD7D1A407FE0C4DE3 /* Pods_MoviewRamaViewsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +387,14 @@
 			isa = PBXGroup;
 			children = (
 				13C0EFE22194420A0002E083 /* MovieRama */,
-				13C0EFF72194420C0002E083 /* MovieRamaTests */,
-				13C0F0022194420C0002E083 /* MovieRamaUITests */,
+				13C0F017219442E10002E083 /* MovieRamaCommon */,
+				13C0F03A219442F10002E083 /* MovieRamaModels */,
+				13C0F05C219443020002E083 /* MovieRamaViewModels */,
+				13C0F07E219443130002E083 /* MoviewRamaViews */,
+				13C0F0AB219443740002E083 /* Tests */,
 				13C0EFE12194420A0002E083 /* Products */,
+				13C0F09C219443330002E083 /* Frameworks */,
+				CC6EC5CB0DE3B5BD3D4017A1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +404,14 @@
 				13C0EFE02194420A0002E083 /* MovieRama.app */,
 				13C0EFF42194420C0002E083 /* MovieRamaTests.xctest */,
 				13C0EFFF2194420C0002E083 /* MovieRamaUITests.xctest */,
+				13C0F016219442E10002E083 /* MovieRamaCommon.framework */,
+				13C0F01E219442E10002E083 /* MovieRamaCommonTests.xctest */,
+				13C0F039219442F00002E083 /* MovieRamaModels.framework */,
+				13C0F041219442F10002E083 /* MovieRamaModelsTests.xctest */,
+				13C0F05B219443020002E083 /* MovieRamaViewModels.framework */,
+				13C0F063219443020002E083 /* MovieRamaViewModelsTests.xctest */,
+				13C0F07D219443130002E083 /* MoviewRamaViews.framework */,
+				13C0F085219443130002E083 /* MoviewRamaViewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,20 +447,194 @@
 			path = MovieRamaUITests;
 			sourceTree = "<group>";
 		};
+		13C0F017219442E10002E083 /* MovieRamaCommon */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F018219442E10002E083 /* MovieRamaCommon.h */,
+				13C0F019219442E10002E083 /* Info.plist */,
+			);
+			path = MovieRamaCommon;
+			sourceTree = "<group>";
+		};
+		13C0F024219442E10002E083 /* MovieRamaCommonTests */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F025219442E10002E083 /* MovieRamaCommonTests.swift */,
+				13C0F027219442E10002E083 /* Info.plist */,
+			);
+			path = MovieRamaCommonTests;
+			sourceTree = "<group>";
+		};
+		13C0F03A219442F10002E083 /* MovieRamaModels */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F03B219442F10002E083 /* MovieRamaModels.h */,
+				13C0F03C219442F10002E083 /* Info.plist */,
+			);
+			path = MovieRamaModels;
+			sourceTree = "<group>";
+		};
+		13C0F047219442F10002E083 /* MovieRamaModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F048219442F10002E083 /* MovieRamaModelsTests.swift */,
+				13C0F04A219442F10002E083 /* Info.plist */,
+			);
+			path = MovieRamaModelsTests;
+			sourceTree = "<group>";
+		};
+		13C0F05C219443020002E083 /* MovieRamaViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F05D219443020002E083 /* MovieRamaViewModels.h */,
+				13C0F05E219443020002E083 /* Info.plist */,
+			);
+			path = MovieRamaViewModels;
+			sourceTree = "<group>";
+		};
+		13C0F069219443020002E083 /* MovieRamaViewModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F06A219443020002E083 /* MovieRamaViewModelsTests.swift */,
+				13C0F06C219443020002E083 /* Info.plist */,
+			);
+			path = MovieRamaViewModelsTests;
+			sourceTree = "<group>";
+		};
+		13C0F07E219443130002E083 /* MoviewRamaViews */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F07F219443130002E083 /* MoviewRamaViews.h */,
+				13C0F080219443130002E083 /* Info.plist */,
+			);
+			path = MoviewRamaViews;
+			sourceTree = "<group>";
+		};
+		13C0F08B219443130002E083 /* MoviewRamaViewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F08C219443130002E083 /* MoviewRamaViewsTests.swift */,
+				13C0F08E219443130002E083 /* Info.plist */,
+			);
+			path = MoviewRamaViewsTests;
+			sourceTree = "<group>";
+		};
+		13C0F09C219443330002E083 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */,
+				A08B0AC1E967F6CB486A992A /* Pods_MovieRamaCommon.framework */,
+				43EC5FEA449C83A07A488FCE /* Pods_MovieRamaCommonTests.framework */,
+				2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */,
+				58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */,
+				FCAD9966359FC359B11330D8 /* Pods_MovieRamaTests.framework */,
+				4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */,
+				E7C98DBEB95909D454A3F8C1 /* Pods_MovieRamaViewModels.framework */,
+				C0C900F8E7D2754B0381BC9D /* Pods_MovieRamaViewModelsTests.framework */,
+				12888EAF89336401AB94AFD8 /* Pods_MoviewRamaViews.framework */,
+				66316C3E1D2D285212193BB8 /* Pods_MoviewRamaViewsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13C0F0AB219443740002E083 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				13C0EFF72194420C0002E083 /* MovieRamaTests */,
+				13C0F0022194420C0002E083 /* MovieRamaUITests */,
+				13C0F024219442E10002E083 /* MovieRamaCommonTests */,
+				13C0F047219442F10002E083 /* MovieRamaModelsTests */,
+				13C0F069219443020002E083 /* MovieRamaViewModelsTests */,
+				13C0F08B219443130002E083 /* MoviewRamaViewsTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CC6EC5CB0DE3B5BD3D4017A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE37D620345051DF7910C31F /* Pods-MovieRama.debug.xcconfig */,
+				BE6F4476C43ED11272D2F4AA /* Pods-MovieRama.release.xcconfig */,
+				EFBCF663A05CE18CC34A439A /* Pods-MovieRamaCommon.debug.xcconfig */,
+				A9B3E05C36555A1270D351A0 /* Pods-MovieRamaCommon.release.xcconfig */,
+				C31FBC945748CDCF7E2DFE38 /* Pods-MovieRamaCommonTests.debug.xcconfig */,
+				80FA4E0DD33C6E07E7119B3B /* Pods-MovieRamaCommonTests.release.xcconfig */,
+				FA8E113FB7A69C10D0F45701 /* Pods-MovieRamaModels.debug.xcconfig */,
+				6EE1572105AB1F08FC3C74A2 /* Pods-MovieRamaModels.release.xcconfig */,
+				0D5B784811623F13EB525A0F /* Pods-MovieRamaModelsTests.debug.xcconfig */,
+				500BC3240B1AE23CC6336317 /* Pods-MovieRamaModelsTests.release.xcconfig */,
+				536C4E52F4837C7482461390 /* Pods-MovieRamaTests.debug.xcconfig */,
+				F127671300FC3983058A3B98 /* Pods-MovieRamaTests.release.xcconfig */,
+				8A6B677A2B8B7B47B058CB66 /* Pods-MovieRamaUITests.debug.xcconfig */,
+				E7A1E819F83E8692CAD3C5CD /* Pods-MovieRamaUITests.release.xcconfig */,
+				DE0A07538355DEC4742FF452 /* Pods-MovieRamaViewModels.debug.xcconfig */,
+				E07A2056682CA5A1A34E2DC9 /* Pods-MovieRamaViewModels.release.xcconfig */,
+				84762D02BABBC08A3ECB27B0 /* Pods-MovieRamaViewModelsTests.debug.xcconfig */,
+				EF842976CBB7525E88CC332B /* Pods-MovieRamaViewModelsTests.release.xcconfig */,
+				7E745736CDAB31C92AC4B136 /* Pods-MoviewRamaViews.debug.xcconfig */,
+				B05C20C28C67028A17B5A760 /* Pods-MoviewRamaViews.release.xcconfig */,
+				1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */,
+				73451D3C9DD3C6A7EB3B7328 /* Pods-MoviewRamaViewsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		13C0F011219442E10002E083 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F028219442E10002E083 /* MovieRamaCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F034219442F00002E083 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F04B219442F10002E083 /* MovieRamaModels.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F056219443020002E083 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F06D219443020002E083 /* MovieRamaViewModels.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F078219443130002E083 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F08F219443130002E083 /* MoviewRamaViews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		13C0EFDF2194420A0002E083 /* MovieRama */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13C0F0082194420C0002E083 /* Build configuration list for PBXNativeTarget "MovieRama" */;
 			buildPhases = (
+				38C514E7CDAA75914F28F64F /* [CP] Check Pods Manifest.lock */,
 				13C0EFDC2194420A0002E083 /* Sources */,
 				13C0EFDD2194420A0002E083 /* Frameworks */,
 				13C0EFDE2194420A0002E083 /* Resources */,
+				13C0F030219442E10002E083 /* Embed Frameworks */,
+				1B97FC274CABD075C1F68F61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				13C0F02A219442E10002E083 /* PBXTargetDependency */,
+				13C0F04D219442F10002E083 /* PBXTargetDependency */,
+				13C0F06F219443020002E083 /* PBXTargetDependency */,
+				13C0F091219443130002E083 /* PBXTargetDependency */,
 			);
 			name = MovieRama;
 			productName = MovieRama;
@@ -149,9 +645,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13C0F00B2194420C0002E083 /* Build configuration list for PBXNativeTarget "MovieRamaTests" */;
 			buildPhases = (
+				7E824D7867B84FC3E467F5C6 /* [CP] Check Pods Manifest.lock */,
 				13C0EFF02194420C0002E083 /* Sources */,
 				13C0EFF12194420C0002E083 /* Frameworks */,
 				13C0EFF22194420C0002E083 /* Resources */,
+				DE31F7AA223A1D87B321F455 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,9 +665,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13C0F00E2194420C0002E083 /* Build configuration list for PBXNativeTarget "MovieRamaUITests" */;
 			buildPhases = (
+				37C2923B79FFB509965F9048 /* [CP] Check Pods Manifest.lock */,
 				13C0EFFB2194420C0002E083 /* Sources */,
 				13C0EFFC2194420C0002E083 /* Frameworks */,
 				13C0EFFD2194420C0002E083 /* Resources */,
+				C5C4889BFBED11E695FE67A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +680,171 @@
 			productName = MovieRamaUITests;
 			productReference = 13C0EFFF2194420C0002E083 /* MovieRamaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		13C0F015219442E10002E083 /* MovieRamaCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0F02D219442E10002E083 /* Build configuration list for PBXNativeTarget "MovieRamaCommon" */;
+			buildPhases = (
+				68E4F89E7764F2D32006A247 /* [CP] Check Pods Manifest.lock */,
+				13C0F011219442E10002E083 /* Headers */,
+				13C0F012219442E10002E083 /* Sources */,
+				13C0F013219442E10002E083 /* Frameworks */,
+				13C0F014219442E10002E083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieRamaCommon;
+			productName = MovieRamaCommon;
+			productReference = 13C0F016219442E10002E083 /* MovieRamaCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13C0F01D219442E10002E083 /* MovieRamaCommonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0F031219442E10002E083 /* Build configuration list for PBXNativeTarget "MovieRamaCommonTests" */;
+			buildPhases = (
+				F45FE4E086CD173575C765F6 /* [CP] Check Pods Manifest.lock */,
+				13C0F01A219442E10002E083 /* Sources */,
+				13C0F01B219442E10002E083 /* Frameworks */,
+				13C0F01C219442E10002E083 /* Resources */,
+				5788738B49F6B2656BBF77C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C0F021219442E10002E083 /* PBXTargetDependency */,
+				13C0F023219442E10002E083 /* PBXTargetDependency */,
+			);
+			name = MovieRamaCommonTests;
+			productName = MovieRamaCommonTests;
+			productReference = 13C0F01E219442E10002E083 /* MovieRamaCommonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13C0F038219442F00002E083 /* MovieRamaModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0F050219442F10002E083 /* Build configuration list for PBXNativeTarget "MovieRamaModels" */;
+			buildPhases = (
+				2B8A669C81615D3B633B2283 /* [CP] Check Pods Manifest.lock */,
+				13C0F034219442F00002E083 /* Headers */,
+				13C0F035219442F00002E083 /* Sources */,
+				13C0F036219442F00002E083 /* Frameworks */,
+				13C0F037219442F00002E083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C0F09B2194432B0002E083 /* PBXTargetDependency */,
+			);
+			name = MovieRamaModels;
+			productName = MovieRamaModels;
+			productReference = 13C0F039219442F00002E083 /* MovieRamaModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13C0F040219442F10002E083 /* MovieRamaModelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0F053219442F10002E083 /* Build configuration list for PBXNativeTarget "MovieRamaModelsTests" */;
+			buildPhases = (
+				A3F6A3284B2C948C35B978D4 /* [CP] Check Pods Manifest.lock */,
+				13C0F03D219442F10002E083 /* Sources */,
+				13C0F03E219442F10002E083 /* Frameworks */,
+				13C0F03F219442F10002E083 /* Resources */,
+				7910D566323927196B752AA2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C0F044219442F10002E083 /* PBXTargetDependency */,
+				13C0F046219442F10002E083 /* PBXTargetDependency */,
+			);
+			name = MovieRamaModelsTests;
+			productName = MovieRamaModelsTests;
+			productReference = 13C0F041219442F10002E083 /* MovieRamaModelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13C0F05A219443020002E083 /* MovieRamaViewModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0F072219443030002E083 /* Build configuration list for PBXNativeTarget "MovieRamaViewModels" */;
+			buildPhases = (
+				FFF79631D805C0530B415553 /* [CP] Check Pods Manifest.lock */,
+				13C0F056219443020002E083 /* Headers */,
+				13C0F057219443020002E083 /* Sources */,
+				13C0F058219443020002E083 /* Frameworks */,
+				13C0F059219443020002E083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C0F09F2194433B0002E083 /* PBXTargetDependency */,
+				13C0F0A12194433B0002E083 /* PBXTargetDependency */,
+			);
+			name = MovieRamaViewModels;
+			productName = MovieRamaViewModels;
+			productReference = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13C0F062219443020002E083 /* MovieRamaViewModelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0F075219443030002E083 /* Build configuration list for PBXNativeTarget "MovieRamaViewModelsTests" */;
+			buildPhases = (
+				8B883FC5ACD3E8E7F3DB03F1 /* [CP] Check Pods Manifest.lock */,
+				13C0F05F219443020002E083 /* Sources */,
+				13C0F060219443020002E083 /* Frameworks */,
+				13C0F061219443020002E083 /* Resources */,
+				D7C6D2E21E986B5F26D19261 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C0F066219443020002E083 /* PBXTargetDependency */,
+				13C0F068219443020002E083 /* PBXTargetDependency */,
+			);
+			name = MovieRamaViewModelsTests;
+			productName = MovieRamaViewModelsTests;
+			productReference = 13C0F063219443020002E083 /* MovieRamaViewModelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13C0F07C219443130002E083 /* MoviewRamaViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0F094219443130002E083 /* Build configuration list for PBXNativeTarget "MoviewRamaViews" */;
+			buildPhases = (
+				A720051C2B656123D586C924 /* [CP] Check Pods Manifest.lock */,
+				13C0F078219443130002E083 /* Headers */,
+				13C0F079219443130002E083 /* Sources */,
+				13C0F07A219443130002E083 /* Frameworks */,
+				13C0F07B219443130002E083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C0F0A52194434F0002E083 /* PBXTargetDependency */,
+				13C0F0A72194434F0002E083 /* PBXTargetDependency */,
+			);
+			name = MoviewRamaViews;
+			productName = MoviewRamaViews;
+			productReference = 13C0F07D219443130002E083 /* MoviewRamaViews.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13C0F084219443130002E083 /* MoviewRamaViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0F097219443130002E083 /* Build configuration list for PBXNativeTarget "MoviewRamaViewsTests" */;
+			buildPhases = (
+				75528CD547FCD041CDE50E88 /* [CP] Check Pods Manifest.lock */,
+				13C0F081219443130002E083 /* Sources */,
+				13C0F082219443130002E083 /* Frameworks */,
+				13C0F083219443130002E083 /* Resources */,
+				9881D088D4DB76FA218424AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C0F088219443130002E083 /* PBXTargetDependency */,
+				13C0F08A219443130002E083 /* PBXTargetDependency */,
+			);
+			name = MoviewRamaViewsTests;
+			productName = MoviewRamaViewsTests;
+			productReference = 13C0F085219443130002E083 /* MoviewRamaViewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,6 +867,34 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 13C0EFDF2194420A0002E083;
 					};
+					13C0F015219442E10002E083 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					13C0F01D219442E10002E083 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 13C0EFDF2194420A0002E083;
+					};
+					13C0F038219442F00002E083 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					13C0F040219442F10002E083 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 13C0EFDF2194420A0002E083;
+					};
+					13C0F05A219443020002E083 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					13C0F062219443020002E083 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 13C0EFDF2194420A0002E083;
+					};
+					13C0F07C219443130002E083 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					13C0F084219443130002E083 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 13C0EFDF2194420A0002E083;
+					};
 				};
 			};
 			buildConfigurationList = 13C0EFDB2194420A0002E083 /* Build configuration list for PBXProject "MovieRama" */;
@@ -218,8 +911,16 @@
 			projectRoot = "";
 			targets = (
 				13C0EFDF2194420A0002E083 /* MovieRama */,
+				13C0F015219442E10002E083 /* MovieRamaCommon */,
+				13C0F038219442F00002E083 /* MovieRamaModels */,
+				13C0F05A219443020002E083 /* MovieRamaViewModels */,
+				13C0F07C219443130002E083 /* MoviewRamaViews */,
 				13C0EFF32194420C0002E083 /* MovieRamaTests */,
 				13C0EFFE2194420C0002E083 /* MovieRamaUITests */,
+				13C0F01D219442E10002E083 /* MovieRamaCommonTests */,
+				13C0F040219442F10002E083 /* MovieRamaModelsTests */,
+				13C0F062219443020002E083 /* MovieRamaViewModelsTests */,
+				13C0F084219443130002E083 /* MoviewRamaViewsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,7 +950,534 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13C0F014219442E10002E083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F01C219442E10002E083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F037219442F00002E083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F03F219442F10002E083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F059219443020002E083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F061219443020002E083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F07B219443130002E083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F083219443130002E083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B97FC274CABD075C1F68F61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MovieRama/Pods-MovieRama-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieRama/Pods-MovieRama-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B8A669C81615D3B633B2283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieRamaModels-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37C2923B79FFB509965F9048 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieRamaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38C514E7CDAA75914F28F64F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieRama-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5788738B49F6B2656BBF77C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaCommonTests/Pods-MovieRamaCommonTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaCommonTests/Pods-MovieRamaCommonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E4F89E7764F2D32006A247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieRamaCommon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75528CD547FCD041CDE50E88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoviewRamaViewsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7910D566323927196B752AA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaModelsTests/Pods-MovieRamaModelsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaModelsTests/Pods-MovieRamaModelsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E824D7867B84FC3E467F5C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieRamaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B883FC5ACD3E8E7F3DB03F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieRamaViewModelsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9881D088D4DB76FA218424AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F6A3284B2C948C35B978D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieRamaModelsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A720051C2B656123D586C924 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoviewRamaViews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C4889BFBED11E695FE67A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaUITests/Pods-MovieRamaUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaUITests/Pods-MovieRamaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C6D2E21E986B5F26D19261 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaViewModelsTests/Pods-MovieRamaViewModelsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaViewModelsTests/Pods-MovieRamaViewModelsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE31F7AA223A1D87B321F455 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaTests/Pods-MovieRamaTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieRamaTests/Pods-MovieRamaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45FE4E086CD173575C765F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieRamaCommonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFF79631D805C0530B415553 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieRamaViewModels-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13C0EFDC2194420A0002E083 /* Sources */ = {
@@ -277,6 +1505,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13C0F012219442E10002E083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F01A219442E10002E083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F026219442E10002E083 /* MovieRamaCommonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F035219442F00002E083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F03D219442F10002E083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F049219442F10002E083 /* MovieRamaModelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F057219443020002E083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F05F219443020002E083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F06B219443020002E083 /* MovieRamaViewModelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F079219443130002E083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0F081219443130002E083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0F08D219443130002E083 /* MoviewRamaViewsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +1577,91 @@
 			isa = PBXTargetDependency;
 			target = 13C0EFDF2194420A0002E083 /* MovieRama */;
 			targetProxy = 13C0F0002194420C0002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F021219442E10002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F015219442E10002E083 /* MovieRamaCommon */;
+			targetProxy = 13C0F020219442E10002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F023219442E10002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0EFDF2194420A0002E083 /* MovieRama */;
+			targetProxy = 13C0F022219442E10002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F02A219442E10002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F015219442E10002E083 /* MovieRamaCommon */;
+			targetProxy = 13C0F029219442E10002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F044219442F10002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F038219442F00002E083 /* MovieRamaModels */;
+			targetProxy = 13C0F043219442F10002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F046219442F10002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0EFDF2194420A0002E083 /* MovieRama */;
+			targetProxy = 13C0F045219442F10002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F04D219442F10002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F038219442F00002E083 /* MovieRamaModels */;
+			targetProxy = 13C0F04C219442F10002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F066219443020002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F05A219443020002E083 /* MovieRamaViewModels */;
+			targetProxy = 13C0F065219443020002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F068219443020002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0EFDF2194420A0002E083 /* MovieRama */;
+			targetProxy = 13C0F067219443020002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F06F219443020002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F05A219443020002E083 /* MovieRamaViewModels */;
+			targetProxy = 13C0F06E219443020002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F088219443130002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F07C219443130002E083 /* MoviewRamaViews */;
+			targetProxy = 13C0F087219443130002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F08A219443130002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0EFDF2194420A0002E083 /* MovieRama */;
+			targetProxy = 13C0F089219443130002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F091219443130002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F07C219443130002E083 /* MoviewRamaViews */;
+			targetProxy = 13C0F090219443130002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F09B2194432B0002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F015219442E10002E083 /* MovieRamaCommon */;
+			targetProxy = 13C0F09A2194432B0002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F09F2194433B0002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F015219442E10002E083 /* MovieRamaCommon */;
+			targetProxy = 13C0F09E2194433B0002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F0A12194433B0002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F038219442F00002E083 /* MovieRamaModels */;
+			targetProxy = 13C0F0A02194433B0002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F0A52194434F0002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F015219442E10002E083 /* MovieRamaCommon */;
+			targetProxy = 13C0F0A42194434F0002E083 /* PBXContainerItemProxy */;
+		};
+		13C0F0A72194434F0002E083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0F05A219443020002E083 /* MovieRamaViewModels */;
+			targetProxy = 13C0F0A62194434F0002E083 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -430,10 +1803,13 @@
 		};
 		13C0F0092194420C0002E083 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE37D620345051DF7910C31F /* Pods-MovieRama.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MovieRama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,16 +1817,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		13C0F00A2194420C0002E083 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE6F4476C43ED11272D2F4AA /* Pods-MovieRama.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = MovieRama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,12 +1837,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		13C0F00C2194420C0002E083 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536C4E52F4837C7482461390 /* Pods-MovieRamaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +1864,7 @@
 		};
 		13C0F00D2194420C0002E083 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F127671300FC3983058A3B98 /* Pods-MovieRamaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +1885,7 @@
 		};
 		13C0F00F2194420C0002E083 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6B677A2B8B7B47B058CB66 /* Pods-MovieRamaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +1905,7 @@
 		};
 		13C0F0102194420C0002E083 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A1E819F83E8692CAD3C5CD /* Pods-MovieRamaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +1920,406 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MovieRama;
+			};
+			name = Release;
+		};
+		13C0F02E219442E10002E083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFBCF663A05CE18CC34A439A /* Pods-MovieRamaCommon.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MovieRamaCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13C0F02F219442E10002E083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B3E05C36555A1270D351A0 /* Pods-MovieRamaCommon.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MovieRamaCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13C0F032219442E10002E083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31FBC945748CDCF7E2DFE38 /* Pods-MovieRamaCommonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = MovieRamaCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaCommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieRama.app/MovieRama";
+			};
+			name = Debug;
+		};
+		13C0F033219442E10002E083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FA4E0DD33C6E07E7119B3B /* Pods-MovieRamaCommonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = MovieRamaCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaCommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieRama.app/MovieRama";
+			};
+			name = Release;
+		};
+		13C0F051219442F10002E083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA8E113FB7A69C10D0F45701 /* Pods-MovieRamaModels.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MovieRamaModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13C0F052219442F10002E083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE1572105AB1F08FC3C74A2 /* Pods-MovieRamaModels.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MovieRamaModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13C0F054219442F10002E083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5B784811623F13EB525A0F /* Pods-MovieRamaModelsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = MovieRamaModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieRama.app/MovieRama";
+			};
+			name = Debug;
+		};
+		13C0F055219442F10002E083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 500BC3240B1AE23CC6336317 /* Pods-MovieRamaModelsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = MovieRamaModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieRama.app/MovieRama";
+			};
+			name = Release;
+		};
+		13C0F073219443030002E083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0A07538355DEC4742FF452 /* Pods-MovieRamaViewModels.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MovieRamaViewModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaViewModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13C0F074219443030002E083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E07A2056682CA5A1A34E2DC9 /* Pods-MovieRamaViewModels.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MovieRamaViewModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaViewModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13C0F076219443030002E083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84762D02BABBC08A3ECB27B0 /* Pods-MovieRamaViewModelsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = MovieRamaViewModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaViewModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieRama.app/MovieRama";
+			};
+			name = Debug;
+		};
+		13C0F077219443030002E083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF842976CBB7525E88CC332B /* Pods-MovieRamaViewModelsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = MovieRamaViewModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaViewModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieRama.app/MovieRama";
+			};
+			name = Release;
+		};
+		13C0F095219443130002E083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E745736CDAB31C92AC4B136 /* Pods-MoviewRamaViews.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MoviewRamaViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MoviewRamaViews;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13C0F096219443130002E083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B05C20C28C67028A17B5A760 /* Pods-MoviewRamaViews.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MoviewRamaViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MoviewRamaViews;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13C0F098219443130002E083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = MoviewRamaViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MoviewRamaViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieRama.app/MovieRama";
+			};
+			name = Debug;
+		};
+		13C0F099219443130002E083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73451D3C9DD3C6A7EB3B7328 /* Pods-MoviewRamaViewsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = MoviewRamaViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MoviewRamaViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieRama.app/MovieRama";
 			};
 			name = Release;
 		};
@@ -575,6 +2358,78 @@
 			buildConfigurations = (
 				13C0F00F2194420C0002E083 /* Debug */,
 				13C0F0102194420C0002E083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C0F02D219442E10002E083 /* Build configuration list for PBXNativeTarget "MovieRamaCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0F02E219442E10002E083 /* Debug */,
+				13C0F02F219442E10002E083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C0F031219442E10002E083 /* Build configuration list for PBXNativeTarget "MovieRamaCommonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0F032219442E10002E083 /* Debug */,
+				13C0F033219442E10002E083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C0F050219442F10002E083 /* Build configuration list for PBXNativeTarget "MovieRamaModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0F051219442F10002E083 /* Debug */,
+				13C0F052219442F10002E083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C0F053219442F10002E083 /* Build configuration list for PBXNativeTarget "MovieRamaModelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0F054219442F10002E083 /* Debug */,
+				13C0F055219442F10002E083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C0F072219443030002E083 /* Build configuration list for PBXNativeTarget "MovieRamaViewModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0F073219443030002E083 /* Debug */,
+				13C0F074219443030002E083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C0F075219443030002E083 /* Build configuration list for PBXNativeTarget "MovieRamaViewModelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0F076219443030002E083 /* Debug */,
+				13C0F077219443030002E083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C0F094219443130002E083 /* Build configuration list for PBXNativeTarget "MoviewRamaViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0F095219443130002E083 /* Debug */,
+				13C0F096219443130002E083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C0F097219443130002E083 /* Build configuration list for PBXNativeTarget "MoviewRamaViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0F098219443130002E083 /* Debug */,
+				13C0F099219443130002E083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
