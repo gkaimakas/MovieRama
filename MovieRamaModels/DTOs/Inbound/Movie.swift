@@ -16,6 +16,7 @@ public struct Movie {
     public let genres: [Genre]
     public let posterURL: URL?
     public let credits: Credits
+    public let isFavorite: Bool
     
     public init(id: Int,
                 title: String?,
@@ -23,7 +24,8 @@ public struct Movie {
                 overview: String?,
                 genres: [Genre],
                 posterURL: URL?,
-                credits: Credits) {
+                credits: Credits,
+                isFavorite: Bool = false) {
         
         self.id = id
         self.title = title
@@ -32,6 +34,18 @@ public struct Movie {
         self.genres = genres
         self.posterURL = posterURL
         self.credits = credits
+        self.isFavorite = isFavorite
+    }
+    
+    func with(favorite: Bool) -> Movie {
+        return Movie(id: id,
+                     title: title,
+                     originalTitle: originalTitle,
+                     overview: overview,
+                     genres: genres,
+                     posterURL: posterURL,
+                     credits: credits,
+                     isFavorite: favorite)
     }
 }
 

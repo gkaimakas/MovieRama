@@ -30,6 +30,8 @@ public struct MovieOverview {
     
     public let releasedAt: Date?
     
+    public let isFavorite: Bool
+    
     public init(id: Int,
                 title: String?,
                 overview: String?,
@@ -43,7 +45,8 @@ public struct MovieOverview {
                 voteCount: Int,
                 voteAverage: Double,
                 popularity: Double,
-                releasedAt: Date?) {
+                releasedAt: Date?,
+                isFavorite: Bool = false) {
         
         self.id = id
         self.title = title
@@ -59,6 +62,25 @@ public struct MovieOverview {
         self.voteAverage = voteAverage
         self.popularity = popularity
         self.releasedAt = releasedAt
+        self.isFavorite = isFavorite
+    }
+    
+    func with(favorite: Bool) -> MovieOverview {
+        return MovieOverview(id: id,
+                             title: title,
+                             overview: overview,
+                             genreIds: genreIds,
+                             originalTitle: originalTitle,
+                             originalLanguage: originalLanguage,
+                             posterPath: posterPath,
+                             backdropPath: backdropPath,
+                             hasVideo: hasVideo,
+                             isAdult: isAdult,
+                             voteCount: voteCount,
+                             voteAverage: voteAverage,
+                             popularity: popularity,
+                             releasedAt: releasedAt,
+                             isFavorite: favorite)
     }
 }
 

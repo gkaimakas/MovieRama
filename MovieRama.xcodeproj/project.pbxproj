@@ -85,6 +85,11 @@
 		13C0F11F21949AB10002E083 /* ReviewDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F11E21949AB10002E083 /* ReviewDecoder.swift */; };
 		13C0F12121949B010002E083 /* PagedReviewDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F12021949B010002E083 /* PagedReviewDecoder.swift */; };
 		13C0F12421949EE70002E083 /* PagedReviewDecoderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F12221949ECA0002E083 /* PagedReviewDecoderSpec.swift */; };
+		13C0F1262194A12A0002E083 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1252194A12A0002E083 /* MovieViewModel.swift */; };
+		13C0F1282194A17D0002E083 /* MovieProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1272194A17D0002E083 /* MovieProviderProtocol.swift */; };
+		13C0F12A2194A1A80002E083 /* ProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1292194A1A80002E083 /* ProviderError.swift */; };
+		13C0F12D2194A4370002E083 /* MovieLocalProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F12C2194A4370002E083 /* MovieLocalProviderProtocol.swift */; };
+		13C0F12F2194A47C0002E083 /* LocalProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F12E2194A47C0002E083 /* LocalProviderError.swift */; };
 		1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */; };
 		46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */; };
 		4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */; };
@@ -333,6 +338,11 @@
 		13C0F11E21949AB10002E083 /* ReviewDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDecoder.swift; sourceTree = "<group>"; };
 		13C0F12021949B010002E083 /* PagedReviewDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedReviewDecoder.swift; sourceTree = "<group>"; };
 		13C0F12221949ECA0002E083 /* PagedReviewDecoderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedReviewDecoderSpec.swift; sourceTree = "<group>"; };
+		13C0F1252194A12A0002E083 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		13C0F1272194A17D0002E083 /* MovieProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProviderProtocol.swift; sourceTree = "<group>"; };
+		13C0F1292194A1A80002E083 /* ProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderError.swift; sourceTree = "<group>"; };
+		13C0F12C2194A4370002E083 /* MovieLocalProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLocalProviderProtocol.swift; sourceTree = "<group>"; };
+		13C0F12E2194A47C0002E083 /* LocalProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalProviderError.swift; sourceTree = "<group>"; };
 		1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -584,6 +594,7 @@
 			children = (
 				13C0F05D219443020002E083 /* MovieRamaViewModels.h */,
 				13C0F05E219443020002E083 /* Info.plist */,
+				13C0F1252194A12A0002E083 /* MovieViewModel.swift */,
 			);
 			path = MovieRamaViewModels;
 			sourceTree = "<group>";
@@ -684,6 +695,8 @@
 				13C0F0BD219453EF0002E083 /* JSONDecodeError.swift */,
 				13C0F0C421945AD80002E083 /* RemoteProviderError.swift */,
 				13C0F0C621945BC10002E083 /* ApiError.swift */,
+				13C0F1292194A1A80002E083 /* ProviderError.swift */,
+				13C0F12E2194A47C0002E083 /* LocalProviderError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -769,7 +782,9 @@
 		13C0F0E5219478360002E083 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				13C0F12B2194A4260002E083 /* Local */,
 				13C0F0E62194783F0002E083 /* Remote */,
+				13C0F1272194A17D0002E083 /* MovieProviderProtocol.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -816,6 +831,14 @@
 				13C0F0F621947C9C0002E083 /* MovieRemoteProviderSpec.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		13C0F12B2194A4260002E083 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F12C2194A4370002E083 /* MovieLocalProviderProtocol.swift */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 		CC6EC5CB0DE3B5BD3D4017A1 /* Pods */ = {
@@ -1154,6 +1177,7 @@
 					};
 					13C0F05A219443020002E083 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					13C0F062219443020002E083 = {
 						CreatedOnToolsVersion = 10.1;
@@ -1803,9 +1827,11 @@
 				13C0F0C721945BC10002E083 /* ApiError.swift in Sources */,
 				13C0F0BE219453EF0002E083 /* JSONDecodeError.swift in Sources */,
 				13C0F0CE21945DD80002E083 /* Page.swift in Sources */,
+				13C0F12A2194A1A80002E083 /* ProviderError.swift in Sources */,
 				13C0F0B8219452F10002E083 /* JSONDecoder.swift in Sources */,
 				13C0F0C321945AAF0002E083 /* SignalProcuder+JSONDecodable.swift in Sources */,
 				13C0F0B6219452D60002E083 /* JSONDecodable.swift in Sources */,
+				13C0F12F2194A47C0002E083 /* LocalProviderError.swift in Sources */,
 				13C0F0BB2194534D0002E083 /* Dictionary.swift in Sources */,
 				13C0F0C521945AD80002E083 /* RemoteProviderError.swift in Sources */,
 			);
@@ -1825,9 +1851,11 @@
 			files = (
 				13C0F118219494610002E083 /* MovieDecoder.swift in Sources */,
 				13C0F11421948C0A0002E083 /* CreditsDecoder.swift in Sources */,
+				13C0F1282194A17D0002E083 /* MovieProviderProtocol.swift in Sources */,
 				13C0F0C921945CD80002E083 /* API+SignalProducer.swift in Sources */,
 				13C0F104219485E40002E083 /* GenreDecoder.swift in Sources */,
 				13C0F0EC21947B0C0002E083 /* MovieRemoteProviderProtocol.swift in Sources */,
+				13C0F12D2194A4370002E083 /* MovieLocalProviderProtocol.swift in Sources */,
 				13C0F108219486DA0002E083 /* SpokenLanguageDecoder.swift in Sources */,
 				13C0F0D421946A080002E083 /* PagedMovieOverviewDecoder.swift in Sources */,
 				13C0F0FC219483930002E083 /* ProductionCompanyDecoder.swift in Sources */,
@@ -1871,6 +1899,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F1262194A12A0002E083 /* MovieViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2467,6 +2496,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE0A07538355DEC4742FF452 /* Pods-MovieRamaViewModels.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2485,6 +2515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaViewModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2496,6 +2527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E07A2056682CA5A1A34E2DC9 /* Pods-MovieRamaViewModels.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
