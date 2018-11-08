@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>TMDB</key>
+	<dict>
+		<key>api_url</key>
+		<string>https://api.themoviedb.org/3</string>
+		<key>api_key</key>
+		<string>30842f7c80f80bb3ad8a2fb98195544d</string>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

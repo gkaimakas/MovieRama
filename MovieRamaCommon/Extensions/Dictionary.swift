@@ -9,12 +9,44 @@
 import Foundation
 
 extension Dictionary where Key == String, Value == Any {
-    public func list(key: String,
-                     file: String = #file,
-                     function: String = #function,
-                     line: Int = #line) throws -> [[String: Any]] {
+    public func json(key: String,
+                         file: String = #file,
+                         function: String = #function,
+                         line: Int = #line) throws -> [String: Any] {
+        
+        guard let value = self[key] as? [String: Any] else {
+            throw JSONDecodeError.invalidTypeOrMissingKey(key: key,
+                                                          file: file,
+                                                          function: function,
+                                                          line: line
+            )
+        }
+        
+        return value
+    }
+    
+    public func jsonList(key: String,
+                         file: String = #file,
+                         function: String = #function,
+                         line: Int = #line) throws -> [[String: Any]] {
         
         guard let value = self[key] as? [[String: Any]] else {
+            throw JSONDecodeError.invalidTypeOrMissingKey(key: key,
+                                                          file: file,
+                                                          function: function,
+                                                          line: line
+            )
+        }
+        
+        return value
+    }
+    
+    public func array<T>(key: String,
+                         file: String = #file,
+                         function: String = #function,
+                         line: Int = #line) throws -> [T] {
+        
+        guard let value = self[key] as? [T] else {
             throw JSONDecodeError.invalidTypeOrMissingKey(key: key,
                                                           file: file,
                                                           function: function,
@@ -136,7 +168,7 @@ extension Dictionary where Key == String, Value == Any {
         return value
     }
     
-    public func date(key: String,
+    public func dateFromTimestamp(key: String,
                      file: String = #file,
                      function: String = #function,
                      line: Int = #line) throws -> Date {
@@ -155,5 +187,29 @@ extension Dictionary where Key == String, Value == Any {
         }
         
         return Date(timeIntervalSince1970: rawValue)
+    }
+    
+    public func dateFromString(key: String,
+                               format: String = "YYYY-MM-dd",
+                               file: String = #file,
+                               function: String = #function,
+                               line: Int = #line) throws -> Date {
+        
+        let rawValue = try self.string(key: key,
+                                       file: file,
+                                       function: function,
+                                       line: line)
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        guard let date = formatter.date(from: rawValue) else {
+            throw JSONDecodeError.invalidTypeOrMissingKey(key: key,
+                                                          file: file,
+                                                          function: function,
+                                                          line: line
+            )
+        }
+        
+        return date
     }
 }
