@@ -43,6 +43,16 @@
 		13C0F0A9219443570002E083 /* MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0F05B219443020002E083 /* MovieRamaViewModels.framework */; };
 		13C0F0B2219451260002E083 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0B0219451260002E083 /* Assets.swift */; };
 		13C0F0B3219451260002E083 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0B1219451260002E083 /* Storyboard.swift */; };
+		13C0F0B6219452D60002E083 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0B5219452D60002E083 /* JSONDecodable.swift */; };
+		13C0F0B8219452F10002E083 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0B7219452F10002E083 /* JSONDecoder.swift */; };
+		13C0F0BB2194534D0002E083 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0BA2194534D0002E083 /* Dictionary.swift */; };
+		13C0F0BE219453EF0002E083 /* JSONDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0BD219453EF0002E083 /* JSONDecodeError.swift */; };
+		13C0F0C121945A4E0002E083 /* SessionManager+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0C021945A4E0002E083 /* SessionManager+Reactive.swift */; };
+		13C0F0C321945AAF0002E083 /* SignalProcuder+JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0C221945AAF0002E083 /* SignalProcuder+JSONDecodable.swift */; };
+		13C0F0C521945AD80002E083 /* RemoteProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0C421945AD80002E083 /* RemoteProviderError.swift */; };
+		13C0F0C721945BC10002E083 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0C621945BC10002E083 /* ApiError.swift */; };
+		13C0F0C921945CD80002E083 /* API+SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0C821945CD80002E083 /* API+SignalProducer.swift */; };
+		13C0F0CE21945DD80002E083 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F0CD21945DD80002E083 /* Page.swift */; };
 		1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */; };
 		46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */; };
 		4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */; };
@@ -249,6 +259,16 @@
 		13C0F08E219443130002E083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C0F0B0219451260002E083 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		13C0F0B1219451260002E083 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		13C0F0B5219452D60002E083 /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		13C0F0B7219452F10002E083 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		13C0F0BA2194534D0002E083 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		13C0F0BD219453EF0002E083 /* JSONDecodeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodeError.swift; sourceTree = "<group>"; };
+		13C0F0C021945A4E0002E083 /* SessionManager+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionManager+Reactive.swift"; sourceTree = "<group>"; };
+		13C0F0C221945AAF0002E083 /* SignalProcuder+JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignalProcuder+JSONDecodable.swift"; sourceTree = "<group>"; };
+		13C0F0C421945AD80002E083 /* RemoteProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProviderError.swift; sourceTree = "<group>"; };
+		13C0F0C621945BC10002E083 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		13C0F0C821945CD80002E083 /* API+SignalProducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+SignalProducer.swift"; sourceTree = "<group>"; };
+		13C0F0CD21945DD80002E083 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -453,8 +473,12 @@
 		13C0F017219442E10002E083 /* MovieRamaCommon */ = {
 			isa = PBXGroup;
 			children = (
+				13C0F0BC219453E40002E083 /* Errors */,
+				13C0F0B9219453410002E083 /* Extensions */,
+				13C0F0B4219452BF0002E083 /* JSON */,
 				13C0F018219442E10002E083 /* MovieRamaCommon.h */,
 				13C0F019219442E10002E083 /* Info.plist */,
+				13C0F0CD21945DD80002E083 /* Page.swift */,
 			);
 			path = MovieRamaCommon;
 			sourceTree = "<group>";
@@ -471,6 +495,8 @@
 		13C0F03A219442F10002E083 /* MovieRamaModels */ = {
 			isa = PBXGroup;
 			children = (
+				13C0F0CA21945DA90002E083 /* DTOs */,
+				13C0F0BF21945A060002E083 /* Extensions */,
 				13C0F03B219442F10002E083 /* MovieRamaModels.h */,
 				13C0F03C219442F10002E083 /* Info.plist */,
 			);
@@ -578,6 +604,66 @@
 				13C0F0B1219451260002E083 /* Storyboard.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		13C0F0B4219452BF0002E083 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F0B5219452D60002E083 /* JSONDecodable.swift */,
+				13C0F0B7219452F10002E083 /* JSONDecoder.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		13C0F0B9219453410002E083 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F0BA2194534D0002E083 /* Dictionary.swift */,
+				13C0F0C221945AAF0002E083 /* SignalProcuder+JSONDecodable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13C0F0BC219453E40002E083 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F0BD219453EF0002E083 /* JSONDecodeError.swift */,
+				13C0F0C421945AD80002E083 /* RemoteProviderError.swift */,
+				13C0F0C621945BC10002E083 /* ApiError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		13C0F0BF21945A060002E083 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F0C021945A4E0002E083 /* SessionManager+Reactive.swift */,
+				13C0F0C821945CD80002E083 /* API+SignalProducer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13C0F0CA21945DA90002E083 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F0CC21945DC60002E083 /* Decoders */,
+				13C0F0CB21945DB20002E083 /* Inbound */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		13C0F0CB21945DB20002E083 /* Inbound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Inbound;
+			sourceTree = "<group>";
+		};
+		13C0F0CC21945DC60002E083 /* Decoders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Decoders;
 			sourceTree = "<group>";
 		};
 		CC6EC5CB0DE3B5BD3D4017A1 /* Pods */ = {
@@ -900,6 +986,7 @@
 					};
 					13C0F015219442E10002E083 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					13C0F01D219442E10002E083 = {
 						CreatedOnToolsVersion = 10.1;
@@ -907,6 +994,7 @@
 					};
 					13C0F038219442F00002E083 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					13C0F040219442F10002E083 = {
 						CreatedOnToolsVersion = 10.1;
@@ -1559,6 +1647,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F0C721945BC10002E083 /* ApiError.swift in Sources */,
+				13C0F0BE219453EF0002E083 /* JSONDecodeError.swift in Sources */,
+				13C0F0CE21945DD80002E083 /* Page.swift in Sources */,
+				13C0F0B8219452F10002E083 /* JSONDecoder.swift in Sources */,
+				13C0F0C321945AAF0002E083 /* SignalProcuder+JSONDecodable.swift in Sources */,
+				13C0F0B6219452D60002E083 /* JSONDecodable.swift in Sources */,
+				13C0F0BB2194534D0002E083 /* Dictionary.swift in Sources */,
+				13C0F0C521945AD80002E083 /* RemoteProviderError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1574,6 +1670,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F0C921945CD80002E083 /* API+SignalProducer.swift in Sources */,
+				13C0F0C121945A4E0002E083 /* SessionManager+Reactive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1855,6 +1953,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE37D620345051DF7910C31F /* Pods-MovieRama.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -1875,6 +1974,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE6F4476C43ED11272D2F4AA /* Pods-MovieRama.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -1977,6 +2077,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EFBCF663A05CE18CC34A439A /* Pods-MovieRamaCommon.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1995,6 +2096,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2006,6 +2108,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9B3E05C36555A1270D351A0 /* Pods-MovieRamaCommon.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2077,6 +2180,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA8E113FB7A69C10D0F45701 /* Pods-MovieRamaModels.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2095,6 +2199,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MovieRamaModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2106,6 +2211,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EE1572105AB1F08FC3C74A2 /* Pods-MovieRamaModels.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
