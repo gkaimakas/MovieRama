@@ -25,6 +25,13 @@ public struct Page<T: JSONDecodable> {
         self.totalResults = totalResults
         self.results = results
     }
+    
+    public func mapResults<U: JSONDecodable>(transform: (T)-> U) -> Page<U> {
+        return Page<U>(page: page,
+                       totalPages: totalPages,
+                       totalResults: totalResults,
+                       results: results.map { transform($0) })
+    }
 }
 
 extension Page: JSONDecodable { }

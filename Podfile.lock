@@ -518,6 +518,7 @@ PODS:
   - Result (4.0.0)
   - SnapKit (4.2.0)
   - SwiftGen (6.0.2)
+  - SwiftyUserDefaults (3.0.1)
   - Swinject (2.5.0)
 
 DEPENDENCIES:
@@ -530,6 +531,7 @@ DEPENDENCIES:
   - ReactiveSwift
   - SnapKit
   - SwiftGen
+  - SwiftyUserDefaults
   - Swinject
 
 SPEC REPOS:
@@ -549,6 +551,7 @@ SPEC REPOS:
     - Result
     - SnapKit
     - SwiftGen
+    - SwiftyUserDefaults
     - Swinject
 
 SPEC CHECKSUMS:
@@ -567,8 +570,9 @@ SPEC CHECKSUMS:
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftGen: e5b047067aa84082826a0c4f1c4c2ddc95bcf74c
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: f88818dfaf79cfd65ec62576d2b77f17cef55e4d
+PODFILE CHECKSUM: acaee79bc941ff2c4c5d5f7bef5bdd273624fb16
 
 COCOAPODS: 1.5.3

@@ -14,6 +14,7 @@ target 'MovieRama' do
   
   pod 'SnapKit'
   pod 'SwiftGen'
+  pod 'SwiftyUserDefaults'
   pod 'Swinject'
 
   target 'MovieRamaTests' do
@@ -54,6 +55,8 @@ target 'MovieRamaModels' do
   pod 'Alamofire'
 
   pod 'ReactiveSwift'
+  
+  pod 'SwiftyUserDefaults'
 
   target 'MovieRamaModelsTests' do
     inherit! :search_paths

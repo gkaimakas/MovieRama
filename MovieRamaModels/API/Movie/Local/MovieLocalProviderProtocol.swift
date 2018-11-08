@@ -13,5 +13,5 @@ import Result
 public protocol MovieLocalProviderProtocol {
     func fetchFavoriteList() -> SignalProducer<[Int], LocalProviderError>
     func addToFavorites(movieId: Int) -> SignalProducer<Int, LocalProviderError>
-    func removedFromFavorites(movieId: Int) -> SignalProducer<Int, LocalProviderError>
+    func removeFromFavorites(movieId: Int) -> SignalProducer<Int, LocalProviderError>
 }

@@ -90,6 +90,9 @@
 		13C0F12A2194A1A80002E083 /* ProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1292194A1A80002E083 /* ProviderError.swift */; };
 		13C0F12D2194A4370002E083 /* MovieLocalProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F12C2194A4370002E083 /* MovieLocalProviderProtocol.swift */; };
 		13C0F12F2194A47C0002E083 /* LocalProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F12E2194A47C0002E083 /* LocalProviderError.swift */; };
+		13C0F1312194CD2B0002E083 /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1302194CD2B0002E083 /* SwiftyUserDefaults.swift */; };
+		13C0F1332194CD950002E083 /* MovieLocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1322194CD950002E083 /* MovieLocalProvider.swift */; };
+		13C0F1352194CFDC0002E083 /* MovieLocalProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1342194CFDC0002E083 /* MovieLocalProviderSpec.swift */; };
 		1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */; };
 		46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */; };
 		4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */; };
@@ -343,6 +346,9 @@
 		13C0F1292194A1A80002E083 /* ProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderError.swift; sourceTree = "<group>"; };
 		13C0F12C2194A4370002E083 /* MovieLocalProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLocalProviderProtocol.swift; sourceTree = "<group>"; };
 		13C0F12E2194A47C0002E083 /* LocalProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalProviderError.swift; sourceTree = "<group>"; };
+		13C0F1302194CD2B0002E083 /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaults.swift; sourceTree = "<group>"; };
+		13C0F1322194CD950002E083 /* MovieLocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLocalProvider.swift; sourceTree = "<group>"; };
+		13C0F1342194CFDC0002E083 /* MovieLocalProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLocalProviderSpec.swift; sourceTree = "<group>"; };
 		1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -707,6 +713,7 @@
 				13C0F0C021945A4E0002E083 /* SessionManager+Reactive.swift */,
 				13C0F0C821945CD80002E083 /* API+SignalProducer.swift */,
 				13C0F0EF21947C070002E083 /* DataRequest+Reactive.swift */,
+				13C0F1302194CD2B0002E083 /* SwiftyUserDefaults.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -829,6 +836,7 @@
 			isa = PBXGroup;
 			children = (
 				13C0F0F621947C9C0002E083 /* MovieRemoteProviderSpec.swift */,
+				13C0F1342194CFDC0002E083 /* MovieLocalProviderSpec.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -837,6 +845,7 @@
 			isa = PBXGroup;
 			children = (
 				13C0F12C2194A4370002E083 /* MovieLocalProviderProtocol.swift */,
+				13C0F1322194CD950002E083 /* MovieLocalProvider.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -1343,6 +1352,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1361,6 +1371,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1520,6 +1531,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -1530,6 +1542,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1850,6 +1863,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C0F118219494610002E083 /* MovieDecoder.swift in Sources */,
+				13C0F1332194CD950002E083 /* MovieLocalProvider.swift in Sources */,
 				13C0F11421948C0A0002E083 /* CreditsDecoder.swift in Sources */,
 				13C0F1282194A17D0002E083 /* MovieProviderProtocol.swift in Sources */,
 				13C0F0C921945CD80002E083 /* API+SignalProducer.swift in Sources */,
@@ -1857,6 +1871,7 @@
 				13C0F0EC21947B0C0002E083 /* MovieRemoteProviderProtocol.swift in Sources */,
 				13C0F12D2194A4370002E083 /* MovieLocalProviderProtocol.swift in Sources */,
 				13C0F108219486DA0002E083 /* SpokenLanguageDecoder.swift in Sources */,
+				13C0F1312194CD2B0002E083 /* SwiftyUserDefaults.swift in Sources */,
 				13C0F0D421946A080002E083 /* PagedMovieOverviewDecoder.swift in Sources */,
 				13C0F0FC219483930002E083 /* ProductionCompanyDecoder.swift in Sources */,
 				13C0F0F021947C070002E083 /* DataRequest+Reactive.swift in Sources */,
@@ -1888,6 +1903,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F1352194CFDC0002E083 /* MovieLocalProviderSpec.swift in Sources */,
 				13C0F0F821947CB60002E083 /* MovieRemoteProviderSpec.swift in Sources */,
 				13C0F0D621946ED10002E083 /* PagedMovieOverviewDecoderSpec.swift in Sources */,
 				13C0F11B219496FD0002E083 /* MovieDecoderSpec.swift in Sources */,
