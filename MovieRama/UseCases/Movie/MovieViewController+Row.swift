@@ -14,8 +14,10 @@ extension MovieViewController {
     enum Row {
         case title(Property<String?>)
         case label(String?)
+        case subLabel(String?)
         case content(Property<String?>)
         case padding(CGFloat)
+        case favorite
         
         var id: String {
             switch self {
@@ -23,10 +25,14 @@ extension MovieViewController {
                 return "title-\(property.value ?? "")"
             case .label(let value):
                 return "label-\(value ?? "")"
+            case .subLabel(let value):
+                return "subLabel-\(value ?? "")"
             case .content(let property):
                 return "content-\(property.value ?? "")"
             case .padding(let height):
                 return "padding-\(height)"
+            case .favorite:
+                return "favorite"
             }
         }
     }

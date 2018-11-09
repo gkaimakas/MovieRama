@@ -47,6 +47,7 @@ extension ContentTableViewCell {
     public enum ContentType {
         case title
         case label
+        case subLabel
         case content
         
         var textColor: UIColor {
@@ -55,6 +56,8 @@ extension ContentTableViewCell {
                 return MDCPalette.indigo.tint500
             case .label:
                 return MDCPalette.indigo.tint400
+            case .subLabel:
+                return UIColor.lightGray
             case .content:
                 return UIColor.darkGray
             }
@@ -66,6 +69,8 @@ extension ContentTableViewCell {
                 return UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.semibold)
             case .label:
                 return UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.semibold)
+            case .subLabel:
+                return UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.semibold)
             case .content:
                 return UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.regular)
             }

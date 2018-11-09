@@ -71,9 +71,14 @@ class PopularMovieListViewController: UIViewController {
                 }
             )
             .observe(on: UIScheduler())
-            .map { $0.0 + $0.1 }
+            .map {
+                [
+                    ("", $0.0),
+                    ("", $0.1)
+                ]
+            }
             .on(value: { [weak self] rows in
-                self?.diffCalculator.sectionedValues = SectionedValues([("", rows)])
+                self?.diffCalculator.sectionedValues = SectionedValues(rows)
             })
             .start()
         

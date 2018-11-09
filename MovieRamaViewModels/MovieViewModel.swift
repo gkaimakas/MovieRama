@@ -57,7 +57,10 @@ public class MovieViewModel {
         backdropURL = Property(value: raw.backdropURL)
         
         _cast = MutableProperty([])
-        cast = Property(_cast)
+        cast = _cast
+            .map { list in
+                return list.sorted(by: { $0.order.value < $1.order.value })
+            }
         
         _crew = MutableProperty([])
         crew = Property(_crew)

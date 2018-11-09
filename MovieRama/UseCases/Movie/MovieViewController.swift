@@ -20,26 +20,121 @@ class MovieViewController: UIViewController {
     var diffCalculator: TableViewDiffCalculator<String, Row>!
     weak var viewModel: MovieViewModel!
     
-    
-    
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
         
         diffCalculator = TableViewDiffCalculator(tableView: tableView)
-        
         tableView.register(ContentTableViewCell.self)
+        tableView.register(FavoriteTableViewCell.self)
         tableView.dataSource = self
         tableView.delegate = self
         
-        diffCalculator.sectionedValues = SectionedValues<String, Row>([
-            ("", [
-                .title(viewModel.title),
-                .padding(8),
-                .label("Description"),
-                .padding(4),
-                .content(viewModel.overview)
-                ])
-            ])
+        let headerView = UIImageView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 256))
+        headerView.contentMode = .scaleAspectFill
+        headerView.reactive.urlImage <~ viewModel
+            .backdropURL
+            .producer
+            .observe(on: UIScheduler())
+            .skipNil()
+            .map { $0.backdrop(width: .w780) }
+            .map { ($0, nil) }
+        
+        tableView.tableHeaderView = headerView
+        
+        viewModel
+            .reviews
+            .reviews
+            .producer
+            .combineLatest(with: viewModel.fetchInfo.isExecuting.producer)
+            .map { list, _ -> [Row] in
+                guard list.count > 0 else {
+                    return []
+                }
+
+                return [
+                    .label("Reviews"),
+                    .padding(8)
+                    ]
+                    +  list.flatMap { review -> [Row] in
+                    return [
+                        .subLabel(review.author.value),
+                        .padding(4),
+                        .content(review.content),
+                        .padding(8),
+                    ]
+                }
+            }
+            .on(value: { [weak self] reviewRows in
+                guard let self = self,
+                    let viewModel = self.viewModel else {
+                    return
+                }
+                
+                let genres = viewModel
+                    .genres
+                    .value
+                    .compactMap { $0.name.value }
+                    .joined(separator: ", ")
+                
+                let castList = viewModel
+                    .cast
+                    .value
+                    .compactMap { $0.name.value }
+                    .joined(separator: ", ")
+                
+                let director = viewModel
+                    .crew
+                    .value
+                    .first
+
+                var persistentRows: [Row] = [
+                    .padding(16),
+                    .title(viewModel.title),
+                    .padding(0),
+                    .content(Property<String?>(value: genres)),
+                    .padding(16),
+                    .favorite,
+                    .padding(16),
+                    .label("Description"),
+                    .padding(4),
+                    .content(viewModel.overview),
+                    .padding(16)
+                ]
+                
+                if let director = director {
+                    persistentRows.append(contentsOf: [
+                        .label("Director"),
+                        .padding(4),
+                        .content(director.name),
+                        .padding(16)
+                        ])
+                }
+                
+                if castList.isEmpty == false {
+                    persistentRows.append(contentsOf: [
+                        .label("Cast"),
+                        .padding(4),
+                        .content(Property<String?>(value: castList)),
+                        .padding(8)
+                        ])
+                }
+
+                self.diffCalculator.sectionedValues = SectionedValues([
+                    ("", persistentRows + reviewRows)
+                    ])
+            })
+            .start()
+        
+        viewModel
+            .reviews
+            .fetchReviews
+            .apply()
+            .start()
+        
+        viewModel
+            .fetchInfo
+            .apply()
+            .start()
     }
     
 }
@@ -67,6 +162,12 @@ extension MovieViewController: UITableViewDataSource {
                                                                     content: property)
             return cell
             
+        case .subLabel(let property):
+            let cell = tableView.dequeueReusableCell(ContentTableViewCell.self, indexPath: indexPath)
+            cell.configuration = ContentTableViewCell.Configuration(contentType: .subLabel,
+                                                                    content: property)
+            return cell
+            
         case .content(let property):
             let cell = tableView.dequeueReusableCell(ContentTableViewCell.self, indexPath: indexPath)
             cell.configuration = ContentTableViewCell.Configuration(contentType: .content,
@@ -76,6 +177,11 @@ extension MovieViewController: UITableViewDataSource {
         case .padding:
             let cell = UITableViewCell()
             cell.selectionStyle = .none
+            return cell
+            
+        case .favorite:
+            let cell = tableView.dequeueReusableCell(FavoriteTableViewCell.self, indexPath: indexPath)
+            cell.viewModel = viewModel
             return cell
         }
     }
@@ -90,7 +196,13 @@ extension MovieViewController: UITableViewDelegate {
         case .label:
             return UITableView.automaticDimension
             
+        case .subLabel:
+            return UITableView.automaticDimension
+            
         case .content:
+            return UITableView.automaticDimension
+            
+        case .favorite:
             return UITableView.automaticDimension
             
         case .padding(let height):

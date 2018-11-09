@@ -19,6 +19,9 @@
 		1322A5B8219622E600BFED7D /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5B7219622E600BFED7D /* ContentTableViewCell.swift */; };
 		1322A5BA219622FA00BFED7D /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1322A5B9219622FA00BFED7D /* ContentTableViewCell.xib */; };
 		1322A5BC2196279B00BFED7D /* UILabel+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5BB2196279B00BFED7D /* UILabel+Reactive.swift */; };
+		1322A5BF219646F900BFED7D /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5BE219646F900BFED7D /* FavoriteTableViewCell.swift */; };
+		1322A5C12196471300BFED7D /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1322A5C02196471300BFED7D /* FavoriteTableViewCell.xib */; };
+		1322A5C32196482300BFED7D /* FavoriteTableViewCellDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5C22196482300BFED7D /* FavoriteTableViewCellDriver.swift */; };
 		13C0EFE42194420A0002E083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE32194420A0002E083 /* AppDelegate.swift */; };
 		13C0EFE62194420A0002E083 /* PopularMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */; };
 		13C0EFE92194420A0002E083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0EFE72194420A0002E083 /* Main.storyboard */; };
@@ -304,6 +307,9 @@
 		1322A5B7219622E600BFED7D /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
 		1322A5B9219622FA00BFED7D /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
 		1322A5BB2196279B00BFED7D /* UILabel+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Reactive.swift"; sourceTree = "<group>"; };
+		1322A5BE219646F900BFED7D /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		1322A5C02196471300BFED7D /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		1322A5C22196482300BFED7D /* FavoriteTableViewCellDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCellDriver.swift; sourceTree = "<group>"; };
 		13C0EFE02194420A0002E083 /* MovieRama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieRama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0EFE32194420A0002E083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewController.swift; sourceTree = "<group>"; };
@@ -582,6 +588,16 @@
 			path = TextTableViewCell;
 			sourceTree = "<group>";
 		};
+		1322A5BD219646E600BFED7D /* FavoriteTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1322A5BE219646F900BFED7D /* FavoriteTableViewCell.swift */,
+				1322A5C02196471300BFED7D /* FavoriteTableViewCell.xib */,
+				1322A5C22196482300BFED7D /* FavoriteTableViewCellDriver.swift */,
+			);
+			path = FavoriteTableViewCell;
+			sourceTree = "<group>";
+		};
 		13C0EFD72194420A0002E083 = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +739,7 @@
 		13C0F07E219443130002E083 /* MoviewRamaViews */ = {
 			isa = PBXGroup;
 			children = (
+				1322A5BD219646E600BFED7D /* FavoriteTableViewCell */,
 				1322A5B6219622D200BFED7D /* TextTableViewCell */,
 				13C0F16C2195CC1A0002E083 /* Resources */,
 				13C0F1672195C0F20002E083 /* LoadingCollectionCell */,
@@ -1495,6 +1512,7 @@
 			files = (
 				13C0F16B2195C19D0002E083 /* LoadingCollectionCell.xib in Resources */,
 				13C0F1712195CC4F0002E083 /* ViewAssets.xcassets in Resources */,
+				1322A5C12196471300BFED7D /* FavoriteTableViewCell.xib in Resources */,
 				1322A5BA219622FA00BFED7D /* ContentTableViewCell.xib in Resources */,
 				13C0F1512195867A0002E083 /* MovieOverviewCell.xib in Resources */,
 			);
@@ -2177,8 +2195,10 @@
 				13C0F160219590220002E083 /* UICollectionView.swift in Sources */,
 				13C0F16F2195CC440002E083 /* ViewAssets.swift in Sources */,
 				13C0F15A21958FA80002E083 /* UITableViewCell.swift in Sources */,
+				1322A5C32196482300BFED7D /* FavoriteTableViewCellDriver.swift in Sources */,
 				1322A5B8219622E600BFED7D /* ContentTableViewCell.swift in Sources */,
 				13C0F14D2195818B0002E083 /* MovieOverviewCell.swift in Sources */,
+				1322A5BF219646F900BFED7D /* FavoriteTableViewCell.swift in Sources */,
 				13C0F15E21958FD80002E083 /* UITableView.swift in Sources */,
 				13C0F1692195C1060002E083 /* LoadingCollectionCell.swift in Sources */,
 				13C0F15C21958FB70002E083 /* UICollectionViewCell.swift in Sources */,
