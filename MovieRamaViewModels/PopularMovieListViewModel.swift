@@ -32,7 +32,7 @@ public class PopularMovieListViewModel {
                 .map { $0.results }
                 .map { list -> [MovieViewModel] in
                     return list.map { MovieViewModel(raw: $0, movieProvider: movieProvider) }
-            }
+                }
         }
         
         forceFetchMovies = Action { _ in

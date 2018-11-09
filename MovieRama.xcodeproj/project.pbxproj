@@ -100,6 +100,8 @@
 		13C0F1412194F09A0002E083 /* CastMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1402194F09A0002E083 /* CastMemberViewModel.swift */; };
 		13C0F1432194F3DF0002E083 /* PopularMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1422194F3DF0002E083 /* PopularMovieListViewModel.swift */; };
 		13C0F1462194F76F0002E083 /* PopularMovieListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1442194F74D0002E083 /* PopularMovieListViewModelSpec.swift */; };
+		13C0F148219573E30002E083 /* SearchMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F147219573E30002E083 /* SearchMovieListViewModel.swift */; };
+		13C0F14A21957C300002E083 /* SearchMovieListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F14921957C300002E083 /* SearchMovieListViewModelSpec.swift */; };
 		1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */; };
 		46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */; };
 		4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */; };
@@ -363,6 +365,8 @@
 		13C0F1402194F09A0002E083 /* CastMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastMemberViewModel.swift; sourceTree = "<group>"; };
 		13C0F1422194F3DF0002E083 /* PopularMovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewModel.swift; sourceTree = "<group>"; };
 		13C0F1442194F74D0002E083 /* PopularMovieListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewModelSpec.swift; sourceTree = "<group>"; };
+		13C0F147219573E30002E083 /* SearchMovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieListViewModel.swift; sourceTree = "<group>"; };
+		13C0F14921957C300002E083 /* SearchMovieListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieListViewModelSpec.swift; sourceTree = "<group>"; };
 		1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -622,6 +626,7 @@
 				13C0F13C2194EF930002E083 /* GenreViewModel.swift */,
 				13C0F13E2194F0300002E083 /* CrewMemberViewModel.swift */,
 				13C0F1402194F09A0002E083 /* CastMemberViewModel.swift */,
+				13C0F147219573E30002E083 /* SearchMovieListViewModel.swift */,
 			);
 			path = MovieRamaViewModels;
 			sourceTree = "<group>";
@@ -631,6 +636,7 @@
 			children = (
 				13C0F06C219443020002E083 /* Info.plist */,
 				13C0F1442194F74D0002E083 /* PopularMovieListViewModelSpec.swift */,
+				13C0F14921957C300002E083 /* SearchMovieListViewModelSpec.swift */,
 			);
 			path = MovieRamaViewModelsTests;
 			sourceTree = "<group>";
@@ -1944,6 +1950,7 @@
 				13C0F13D2194EF930002E083 /* GenreViewModel.swift in Sources */,
 				13C0F13B2194E94F0002E083 /* ReviewListViewModel.swift in Sources */,
 				13C0F1432194F3DF0002E083 /* PopularMovieListViewModel.swift in Sources */,
+				13C0F148219573E30002E083 /* SearchMovieListViewModel.swift in Sources */,
 				13C0F1372194E5DF0002E083 /* SimilarMovieListViewModel.swift in Sources */,
 				13C0F1412194F09A0002E083 /* CastMemberViewModel.swift in Sources */,
 			);
@@ -1953,6 +1960,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F14A21957C300002E083 /* SearchMovieListViewModelSpec.swift in Sources */,
 				13C0F1462194F76F0002E083 /* PopularMovieListViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
