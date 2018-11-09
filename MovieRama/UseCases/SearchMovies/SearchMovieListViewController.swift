@@ -17,6 +17,9 @@ import UIKit
 
 class SearchMovieListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    
+//    var parentViewController: UIViewController?
+    
     var viewModel: SearchMovieListViewModel!
     var diffCalculator: CollectionViewDiffCalculator<String, Row>!
     
@@ -86,12 +89,28 @@ extension SearchMovieListViewController: UICollectionViewDelegate {
             break
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch  diffCalculator.value(atIndexPath: indexPath) {
+        case .movie(let movie):
+            let viewController = StoryboardScene
+                .Main
+                .movieViewController
+                .instantiate()
+            
+            viewController.viewModel = movie
+            print(type(of: parent))
+            presentingViewController?.navigationController?.pushViewController(viewController, animated: true)
+        case .isLoading:
+            break
+        }
+    }
 }
 
 extension SearchMovieListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch diffCalculator.value(atIndexPath: indexPath) {
-        case .movie(let movie):
+        case .movie:
             return CGSize(width: collectionView.frame.width-32, height: 256)
         case .isLoading:
             return CGSize(width: collectionView.frame.width-32, height: 48)

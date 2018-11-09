@@ -45,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1Z-Rr-kyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="560"/>
+            <point key="canvasLocation" x="2086" y="-917"/>
         </scene>
         <!--Popular Movie List View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -83,7 +83,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="116.49175412293854"/>
+            <point key="canvasLocation" x="1127" y="-582"/>
+        </scene>
+        <!--Movie View Controller-->
+        <scene sceneID="eeo-7B-H0v">
+            <objects>
+                <viewController storyboardIdentifier="MovieViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Eaf-FK-1uo" customClass="MovieViewController" customModule="MovieRama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKV-xB-bR3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JVX-gp-WIY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bXS-qk-JqS" firstAttribute="trailing" secondItem="JVX-gp-WIY" secondAttribute="trailing" id="91r-nb-UKW"/>
+                            <constraint firstItem="bXS-qk-JqS" firstAttribute="bottom" secondItem="JVX-gp-WIY" secondAttribute="bottom" id="Bx5-Zp-Cqa"/>
+                            <constraint firstItem="JVX-gp-WIY" firstAttribute="top" secondItem="bXS-qk-JqS" secondAttribute="top" id="HnH-8c-u5k"/>
+                            <constraint firstItem="JVX-gp-WIY" firstAttribute="leading" secondItem="bXS-qk-JqS" secondAttribute="leading" id="xnD-yO-0yW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bXS-qk-JqS"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JVX-gp-WIY" id="sFg-16-5ru"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRe-r3-6WN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2093.5999999999999" y="-164.16791604197903"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YJ2-2K-6d7">

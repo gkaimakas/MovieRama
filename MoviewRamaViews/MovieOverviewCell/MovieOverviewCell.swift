@@ -90,6 +90,8 @@ public class MovieOverviewCell: MDCCardCollectionCell {
         shadowElevation(for: MDCCardCellState.highlighted)
         imageView.layer.cornerRadius = cornerRadius
         wrapperView.round(corners: [.bottomLeft, .bottomRight], radius: cornerRadius)
+        
+        titleLabel.textColor = MDCPalette.indigo.tint500
     }
     
     override public func prepareForReuse() {

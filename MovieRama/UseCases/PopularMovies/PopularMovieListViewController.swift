@@ -118,12 +118,27 @@ extension PopularMovieListViewController: UICollectionViewDelegate {
                 .start()
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch  diffCalculator.value(atIndexPath: indexPath) {
+        case .movie(let movie):
+            let viewController = StoryboardScene
+                .Main
+                .movieViewController
+                .instantiate()
+            
+            viewController.viewModel = movie
+            navigationController?.pushViewController(viewController, animated: true)
+        case .isLoading:
+            break
+        }
+    }
 }
 
 extension PopularMovieListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch diffCalculator.value(atIndexPath: indexPath) {
-        case .movie(let movie):
+        case .movie:
             return CGSize(width: collectionView.frame.width-32, height: 256)
         case .isLoading:
             return CGSize(width: collectionView.frame.width-32, height: 48)
