@@ -26,6 +26,7 @@ class MovieViewController: UIViewController {
         diffCalculator = TableViewDiffCalculator(tableView: tableView)
         tableView.register(ContentTableViewCell.self)
         tableView.register(FavoriteTableViewCell.self)
+        tableView.register(SimilarMoviesTableViewCell.self)
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -64,7 +65,8 @@ class MovieViewController: UIViewController {
                     ]
                 }
             }
-            .on(value: { [weak self] reviewRows in
+            .combineLatest(with: viewModel.similarMovies.movies.producer)
+            .on(value: { [weak self] reviewRows, similarMovieList in
                 guard let self = self,
                     let viewModel = self.viewModel else {
                     return
@@ -118,6 +120,14 @@ class MovieViewController: UIViewController {
                         .padding(8)
                         ])
                 }
+                
+                if similarMovieList.count > 0 {
+                    persistentRows.append(contentsOf: [
+                        .padding(8),
+                        .similarMovies,
+                        .padding(8)
+                        ])
+                }
 
                 self.diffCalculator.sectionedValues = SectionedValues([
                     ("", persistentRows + reviewRows)
@@ -133,6 +143,12 @@ class MovieViewController: UIViewController {
         
         viewModel
             .fetchInfo
+            .apply()
+            .start()
+        
+        viewModel
+            .similarMovies
+            .fetchSimilarMovies
             .apply()
             .start()
     }
@@ -183,6 +199,11 @@ extension MovieViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(FavoriteTableViewCell.self, indexPath: indexPath)
             cell.viewModel = viewModel
             return cell
+            
+        case .similarMovies:
+            let cell = tableView.dequeueReusableCell(SimilarMoviesTableViewCell.self, indexPath: indexPath)
+            cell.viewModel = viewModel.similarMovies
+            return cell
         }
     }
 }
@@ -204,6 +225,9 @@ extension MovieViewController: UITableViewDelegate {
             
         case .favorite:
             return UITableView.automaticDimension
+            
+        case .similarMovies:
+            return 200
             
         case .padding(let height):
             return height

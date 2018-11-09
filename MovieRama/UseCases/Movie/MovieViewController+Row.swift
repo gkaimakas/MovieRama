@@ -18,6 +18,7 @@ extension MovieViewController {
         case content(Property<String?>)
         case padding(CGFloat)
         case favorite
+        case similarMovies
         
         var id: String {
             switch self {
@@ -33,6 +34,8 @@ extension MovieViewController {
                 return "padding-\(height)"
             case .favorite:
                 return "favorite"
+            case .similarMovies:
+                return "similarMovies"
             }
         }
     }
