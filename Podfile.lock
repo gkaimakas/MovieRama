@@ -1,11 +1,9 @@
 PODS:
   - Alamofire (4.7.3)
-  - DifferenceKit (0.7.2):
-    - DifferenceKit/Core (= 0.7.2)
-    - DifferenceKit/UIKitExtension (= 0.7.2)
-  - DifferenceKit/Core (0.7.2)
-  - DifferenceKit/UIKitExtension (0.7.2):
-    - DifferenceKit/Core
+  - Cache (5.2.0)
+  - Dwifft (0.9)
+  - Imaginary (4.2.0):
+    - Cache (~> 5.0)
   - MaterialComponents (68.1.0):
     - MaterialComponents/ActivityIndicator (= 68.1.0)
     - "MaterialComponents/ActivityIndicator+ColorThemer (= 68.1.0)"
@@ -523,7 +521,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - DifferenceKit
+  - Dwifft
+  - Imaginary
   - MaterialComponents
   - Nimble
   - Quick
@@ -537,7 +536,9 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - DifferenceKit
+    - Cache
+    - Dwifft
+    - Imaginary
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
@@ -556,7 +557,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  DifferenceKit: 5179eaf0e76a1b9fbaeb93f4c1a82510be63ca65
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
+  Dwifft: 42912068ed2a8146077d1a1404df18625bd086e1
+  Imaginary: dae33d06dbc2ada22f98afef5eb45cc061311a2c
   MaterialComponents: 9090ac82784a9c031ff62a44d3d9880143029d63
   MDFInternationalization: b5b8626628abf026e630e5ebaeee563037712cbb
   MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
@@ -573,6 +576,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: 25e9ca0e93cb59ec49ba6e1d7a3c6df60dc52f7f
+PODFILE CHECKSUM: 505860334e8c58f1dbcfd605bc910ccfd0964a41
 
 COCOAPODS: 1.5.3

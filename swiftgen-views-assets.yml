@@ -1,0 +1,10 @@
+input_dir: MoviewRamaViews/Resources
+output_dir: MoviewRamaViews/Resources/Generated/
+xcassets:
+  inputs: ViewAssets.xcassets
+  outputs:
+    templateName: swift4
+    output: ViewAssets.swift
+    params:
+      enumName: ViewAssets
+      publicAccess: true

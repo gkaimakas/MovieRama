@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		01E3162D2A5B02AB307DBB6C /* Pods_MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C98DBEB95909D454A3F8C1 /* Pods_MovieRamaViewModels.framework */; };
 		0E984159835C56A101B630F6 /* Pods_MovieRamaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */; };
+		1322A5A72195D5A200BFED7D /* URL+TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5A62195D5A200BFED7D /* URL+TMDB.swift */; };
+		1322A5A92195D97800BFED7D /* UIImageView+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5A82195D97800BFED7D /* UIImageView+Reactive.swift */; };
+		1322A5AB2195DB7F00BFED7D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5AA2195DB7F00BFED7D /* UIView.swift */; };
 		13C0EFE42194420A0002E083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE32194420A0002E083 /* AppDelegate.swift */; };
 		13C0EFE62194420A0002E083 /* PopularMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */; };
 		13C0EFE92194420A0002E083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0EFE72194420A0002E083 /* Main.storyboard */; };
@@ -112,6 +115,11 @@
 		13C0F15E21958FD80002E083 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F15D21958FD80002E083 /* UITableView.swift */; };
 		13C0F160219590220002E083 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F15F219590220002E083 /* UICollectionView.swift */; };
 		13C0F162219593FF0002E083 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F161219593FF0002E083 /* Date.swift */; };
+		13C0F1662195BD720002E083 /* PopularMovieListViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1652195BD720002E083 /* PopularMovieListViewController+Row.swift */; };
+		13C0F1692195C1060002E083 /* LoadingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1682195C1060002E083 /* LoadingCollectionCell.swift */; };
+		13C0F16B2195C19D0002E083 /* LoadingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C0F16A2195C19D0002E083 /* LoadingCollectionCell.xib */; };
+		13C0F16F2195CC440002E083 /* ViewAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F16E2195CC440002E083 /* ViewAssets.swift */; };
+		13C0F1712195CC4F0002E083 /* ViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C0F1702195CC4F0002E083 /* ViewAssets.xcassets */; };
 		1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */; };
 		46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */; };
 		4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */; };
@@ -279,6 +287,9 @@
 /* Begin PBXFileReference section */
 		0D5B784811623F13EB525A0F /* Pods-MovieRamaModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRamaModelsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRamaModelsTests/Pods-MovieRamaModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		12888EAF89336401AB94AFD8 /* Pods_MoviewRamaViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviewRamaViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1322A5A62195D5A200BFED7D /* URL+TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+TMDB.swift"; sourceTree = "<group>"; };
+		1322A5A82195D97800BFED7D /* UIImageView+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Reactive.swift"; sourceTree = "<group>"; };
+		1322A5AA2195DB7F00BFED7D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		13C0EFE02194420A0002E083 /* MovieRama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieRama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0EFE32194420A0002E083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewController.swift; sourceTree = "<group>"; };
@@ -387,6 +398,11 @@
 		13C0F15D21958FD80002E083 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		13C0F15F219590220002E083 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		13C0F161219593FF0002E083 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		13C0F1652195BD720002E083 /* PopularMovieListViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PopularMovieListViewController+Row.swift"; sourceTree = "<group>"; };
+		13C0F1682195C1060002E083 /* LoadingCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionCell.swift; sourceTree = "<group>"; };
+		13C0F16A2195C19D0002E083 /* LoadingCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCollectionCell.xib; sourceTree = "<group>"; };
+		13C0F16E2195CC440002E083 /* ViewAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAssets.swift; sourceTree = "<group>"; };
+		13C0F1702195CC4F0002E083 /* ViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ViewAssets.xcassets; sourceTree = "<group>"; };
 		1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -666,6 +682,8 @@
 		13C0F07E219443130002E083 /* MoviewRamaViews */ = {
 			isa = PBXGroup;
 			children = (
+				13C0F16C2195CC1A0002E083 /* Resources */,
+				13C0F1672195C0F20002E083 /* LoadingCollectionCell */,
 				13C0F15821958F730002E083 /* Extensions */,
 				13C0F14B2195816C0002E083 /* MovieOverviewCell */,
 				13C0F07F219443130002E083 /* MoviewRamaViews.h */,
@@ -743,6 +761,7 @@
 				13C0F0BA2194534D0002E083 /* Dictionary.swift */,
 				13C0F0C221945AAF0002E083 /* SignalProcuder+JSONDecodable.swift */,
 				13C0F161219593FF0002E083 /* Date.swift */,
+				1322A5A62195D5A200BFED7D /* URL+TMDB.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -915,7 +934,7 @@
 		13C0F15221958CF00002E083 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */,
+				13C0F1642195BD510002E083 /* PopularMovies */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -935,8 +954,45 @@
 				13C0F15B21958FB70002E083 /* UICollectionViewCell.swift */,
 				13C0F15D21958FD80002E083 /* UITableView.swift */,
 				13C0F15F219590220002E083 /* UICollectionView.swift */,
+				1322A5A82195D97800BFED7D /* UIImageView+Reactive.swift */,
+				1322A5AA2195DB7F00BFED7D /* UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13C0F1642195BD510002E083 /* PopularMovies */ = {
+			isa = PBXGroup;
+			children = (
+				13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */,
+				13C0F1652195BD720002E083 /* PopularMovieListViewController+Row.swift */,
+			);
+			path = PopularMovies;
+			sourceTree = "<group>";
+		};
+		13C0F1672195C0F20002E083 /* LoadingCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F1682195C1060002E083 /* LoadingCollectionCell.swift */,
+				13C0F16A2195C19D0002E083 /* LoadingCollectionCell.xib */,
+			);
+			path = LoadingCollectionCell;
+			sourceTree = "<group>";
+		};
+		13C0F16C2195CC1A0002E083 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F1702195CC4F0002E083 /* ViewAssets.xcassets */,
+				13C0F16D2195CC340002E083 /* Generated */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		13C0F16D2195CC340002E083 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F16E2195CC440002E083 /* ViewAssets.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		CC6EC5CB0DE3B5BD3D4017A1 /* Pods */ = {
@@ -1199,6 +1255,7 @@
 			buildConfigurationList = 13C0F094219443130002E083 /* Build configuration list for PBXNativeTarget "MoviewRamaViews" */;
 			buildPhases = (
 				A720051C2B656123D586C924 /* [CP] Check Pods Manifest.lock */,
+				1322A5A52195CCC100BFED7D /* ShellScript */,
 				13C0F078219443130002E083 /* Headers */,
 				13C0F079219443130002E083 /* Sources */,
 				13C0F07A219443130002E083 /* Frameworks */,
@@ -1391,6 +1448,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F16B2195C19D0002E083 /* LoadingCollectionCell.xib in Resources */,
+				13C0F1712195CC4F0002E083 /* ViewAssets.xcassets in Resources */,
 				13C0F1512195867A0002E083 /* MovieOverviewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1405,6 +1464,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1322A5A52195CCC100BFED7D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen config run --config swiftgen-views-assets.yml\n";
+		};
 		13C0F0AC21944C300002E083 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1432,7 +1508,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MovieRama/Pods-MovieRama-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Dwifft/Dwifft.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
@@ -1451,7 +1529,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dwifft.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
@@ -1695,7 +1775,9 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Dwifft/Dwifft.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
@@ -1713,7 +1795,9 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dwifft.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
@@ -1908,6 +1992,7 @@
 				13C0EFE62194420A0002E083 /* PopularMovieListViewController.swift in Sources */,
 				13C0F15421958D090002E083 /* MovieRamaContainer.swift in Sources */,
 				13C0EFE42194420A0002E083 /* AppDelegate.swift in Sources */,
+				13C0F1662195BD720002E083 /* PopularMovieListViewController+Row.swift in Sources */,
 				13C0F0B2219451260002E083 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1938,6 +2023,7 @@
 				13C0F12A2194A1A80002E083 /* ProviderError.swift in Sources */,
 				13C0F0B8219452F10002E083 /* JSONDecoder.swift in Sources */,
 				13C0F0C321945AAF0002E083 /* SignalProcuder+JSONDecodable.swift in Sources */,
+				1322A5A72195D5A200BFED7D /* URL+TMDB.swift in Sources */,
 				13C0F0B6219452D60002E083 /* JSONDecodable.swift in Sources */,
 				13C0F12F2194A47C0002E083 /* LocalProviderError.swift in Sources */,
 				13C0F162219593FF0002E083 /* Date.swift in Sources */,
@@ -2036,12 +2122,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1322A5AB2195DB7F00BFED7D /* UIView.swift in Sources */,
 				13C0F160219590220002E083 /* UICollectionView.swift in Sources */,
+				13C0F16F2195CC440002E083 /* ViewAssets.swift in Sources */,
 				13C0F15A21958FA80002E083 /* UITableViewCell.swift in Sources */,
 				13C0F14D2195818B0002E083 /* MovieOverviewCell.swift in Sources */,
 				13C0F15E21958FD80002E083 /* UITableView.swift in Sources */,
+				13C0F1692195C1060002E083 /* LoadingCollectionCell.swift in Sources */,
 				13C0F15C21958FB70002E083 /* UICollectionViewCell.swift in Sources */,
 				13C0F14F219581B10002E083 /* MovieOverviewCellDriver.swift in Sources */,
+				1322A5A92195D97800BFED7D /* UIImageView+Reactive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

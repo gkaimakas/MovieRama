@@ -17,6 +17,8 @@ public protocol MovieOverviewCellDriver: class {
     var voteAverage: Property<Double> { get }
     var releasedAt: Property<Date?> { get }
     var isFavorite: Property<Bool> { get }
+    var posterURL: Property<URL?> { get }
+    var backdropURL: Property<URL?> { get }
     var toggleFavorite: Action<Void, Bool, ProviderError> { get }
 }
 

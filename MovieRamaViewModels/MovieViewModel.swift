@@ -20,11 +20,13 @@ public class MovieViewModel {
     let _voteAverage: MutableProperty<Double>
     let _isFavorite: MutableProperty<Bool>
     
+    public let id: Property<Int>
     public let title: Property<String?>
     public let originalTitle: Property<String?>
     public let overview: Property<String?>
     public let genres: Property<[GenreViewModel]>
     public let posterURL: Property<URL?>
+    public let backdropURL: Property<URL?>
     public let cast: Property<[CastMemberViewModel]>
     public let crew: Property<[CrewMemberViewModel]>
     public let voteAverage: Property<Double>
@@ -43,6 +45,7 @@ public class MovieViewModel {
         
         _infoState = MutableProperty(.overview)
         
+        id = Property(value: raw.id)
         title = Property(value: raw.title)
         originalTitle = Property(value: raw.originalTitle)
         overview = Property(value: raw.overview)
@@ -51,6 +54,7 @@ public class MovieViewModel {
         genres = Property(_genres)
         
         posterURL = Property(value: raw.posterURL)
+        backdropURL = Property(value: raw.backdropURL)
         
         _cast = MutableProperty([])
         cast = Property(_cast)
@@ -155,5 +159,12 @@ extension MovieViewModel {
             
             isFavorite = Property(value: raw.isFavorite)
         }
+    }
+}
+
+extension MovieViewModel: Equatable {
+    public static func ==(lhs: MovieViewModel, rhs: MovieViewModel) -> Bool {
+        return lhs.id.value == rhs.id.value
+            && lhs._infoState.value == rhs._infoState.value
     }
 }

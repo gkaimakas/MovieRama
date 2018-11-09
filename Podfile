@@ -5,7 +5,10 @@ target 'MovieRama' do
   use_frameworks!
 
   pod 'Alamofire'
-  pod 'DifferenceKit'
+  
+  pod 'Dwifft'
+  
+  pod 'Imaginary'
 
   pod 'MaterialComponents'
 
@@ -84,7 +87,9 @@ end
 target 'MoviewRamaViews' do
   use_frameworks!
 
-  pod 'DifferenceKit'
+  pod 'Dwifft'
+  
+  pod 'Imaginary'
 
   pod 'MaterialComponents'
 

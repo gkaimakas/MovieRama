@@ -6,6 +6,7 @@
 //  Copyright © 2018 George Kaimakas. All rights reserved.
 //
 
+import Dwifft
 import MovieRamaCommon
 import MovieRamaViewModels
 import MoviewRamaViews
@@ -17,23 +18,40 @@ import UIKit
 class PopularMovieListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var viewModel: PopularMovieListViewModel!
+    var diffCalculator: CollectionViewDiffCalculator<String, Row>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewModel = UIApplication.inject(PopularMovieListViewModel.self)
+        diffCalculator = CollectionViewDiffCalculator<String, Row>(collectionView: collectionView)
         
         collectionView.register(MovieOverviewCell.self)
+        collectionView.register(LoadingCollectionCell.self)
         collectionView.dataSource = self
         collectionView.delegate = self
         
         viewModel
             .movies
             .producer
-            .on(value: { [weak self] _ in
-                self?.collectionView.reloadData()
+            .map { list -> [Row] in
+                return list.map { Row.movie($0) }
+            }
+            .combineLatest(with: viewModel
+                .fetchMovies
+                .isExecuting
+                .producer
+                .map { isLoading -> [Row] in
+                    return isLoading == true ? [.isLoading] : []
+                }
+            )
+            .map { $0.0 + $0.1 }
+            .on(value: { [weak self] rows in
+                self?.diffCalculator.sectionedValues = SectionedValues([("", rows)])
             })
             .start()
+        
+        
         
         viewModel
             .fetchMovies
@@ -44,22 +62,23 @@ class PopularMovieListViewController: UIViewController {
 
 extension PopularMovieListViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return diffCalculator.numberOfSections()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel
-            .movies
-            .value
-            .count
+        return diffCalculator.numberOfObjects(inSection: section)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(MovieOverviewCell.self, indexPath: indexPath)
-        cell.viewModel = viewModel
-            .movies
-            .value[indexPath.row]
-        return cell
+        switch diffCalculator.value(atIndexPath: indexPath) {
+        case .movie(let movie):
+            let cell = collectionView.dequeueReusableCell(MovieOverviewCell.self, indexPath: indexPath)
+            cell.viewModel = movie
+            return cell
+        case .isLoading:
+            let cell = collectionView.dequeueReusableCell(LoadingCollectionCell.self, indexPath: indexPath)
+            return cell
+        }
     }
 }
 
@@ -77,7 +96,12 @@ extension PopularMovieListViewController: UICollectionViewDelegate {
 
 extension PopularMovieListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width-32, height: 256)
+        switch diffCalculator.value(atIndexPath: indexPath) {
+        case .movie(let movie):
+            return CGSize(width: collectionView.frame.width-32, height: 256)
+        case .isLoading:
+            return CGSize(width: collectionView.frame.width-32, height: 48)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
