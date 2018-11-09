@@ -10,7 +10,7 @@
 		01E3162D2A5B02AB307DBB6C /* Pods_MovieRamaViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C98DBEB95909D454A3F8C1 /* Pods_MovieRamaViewModels.framework */; };
 		0E984159835C56A101B630F6 /* Pods_MovieRamaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */; };
 		13C0EFE42194420A0002E083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE32194420A0002E083 /* AppDelegate.swift */; };
-		13C0EFE62194420A0002E083 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE52194420A0002E083 /* ViewController.swift */; };
+		13C0EFE62194420A0002E083 /* PopularMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */; };
 		13C0EFE92194420A0002E083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0EFE72194420A0002E083 /* Main.storyboard */; };
 		13C0EFEB2194420C0002E083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C0EFEA2194420C0002E083 /* Assets.xcassets */; };
 		13C0EFEE2194420C0002E083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0EFEC2194420C0002E083 /* LaunchScreen.storyboard */; };
@@ -102,6 +102,16 @@
 		13C0F1462194F76F0002E083 /* PopularMovieListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F1442194F74D0002E083 /* PopularMovieListViewModelSpec.swift */; };
 		13C0F148219573E30002E083 /* SearchMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F147219573E30002E083 /* SearchMovieListViewModel.swift */; };
 		13C0F14A21957C300002E083 /* SearchMovieListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F14921957C300002E083 /* SearchMovieListViewModelSpec.swift */; };
+		13C0F14D2195818B0002E083 /* MovieOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F14C2195818B0002E083 /* MovieOverviewCell.swift */; };
+		13C0F14F219581B10002E083 /* MovieOverviewCellDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F14E219581B10002E083 /* MovieOverviewCellDriver.swift */; };
+		13C0F1512195867A0002E083 /* MovieOverviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C0F1502195867A0002E083 /* MovieOverviewCell.xib */; };
+		13C0F15421958D090002E083 /* MovieRamaContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F15321958D090002E083 /* MovieRamaContainer.swift */; };
+		13C0F15721958ED50002E083 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F15621958ED50002E083 /* UIApplication.swift */; };
+		13C0F15A21958FA80002E083 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F15921958FA80002E083 /* UITableViewCell.swift */; };
+		13C0F15C21958FB70002E083 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F15B21958FB70002E083 /* UICollectionViewCell.swift */; };
+		13C0F15E21958FD80002E083 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F15D21958FD80002E083 /* UITableView.swift */; };
+		13C0F160219590220002E083 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F15F219590220002E083 /* UICollectionView.swift */; };
+		13C0F162219593FF0002E083 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0F161219593FF0002E083 /* Date.swift */; };
 		1BB1E3322602CE5C532A5603 /* Pods_MovieRama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFD064504D365D50D4BCB6C /* Pods_MovieRama.framework */; };
 		46156E04C7841AFC9DED566B /* Pods_MovieRamaModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */; };
 		4AF081500BE41ED18588DBCA /* Pods_MovieRamaModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58714DD554FF65A8F173B52B /* Pods_MovieRamaModelsTests.framework */; };
@@ -271,7 +281,7 @@
 		12888EAF89336401AB94AFD8 /* Pods_MoviewRamaViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviewRamaViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0EFE02194420A0002E083 /* MovieRama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieRama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0EFE32194420A0002E083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13C0EFE52194420A0002E083 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewController.swift; sourceTree = "<group>"; };
 		13C0EFE82194420A0002E083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13C0EFEA2194420C0002E083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13C0EFED2194420C0002E083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -367,6 +377,16 @@
 		13C0F1442194F74D0002E083 /* PopularMovieListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewModelSpec.swift; sourceTree = "<group>"; };
 		13C0F147219573E30002E083 /* SearchMovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieListViewModel.swift; sourceTree = "<group>"; };
 		13C0F14921957C300002E083 /* SearchMovieListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieListViewModelSpec.swift; sourceTree = "<group>"; };
+		13C0F14C2195818B0002E083 /* MovieOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOverviewCell.swift; sourceTree = "<group>"; };
+		13C0F14E219581B10002E083 /* MovieOverviewCellDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOverviewCellDriver.swift; sourceTree = "<group>"; };
+		13C0F1502195867A0002E083 /* MovieOverviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieOverviewCell.xib; sourceTree = "<group>"; };
+		13C0F15321958D090002E083 /* MovieRamaContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRamaContainer.swift; sourceTree = "<group>"; };
+		13C0F15621958ED50002E083 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		13C0F15921958FA80002E083 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		13C0F15B21958FB70002E083 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		13C0F15D21958FD80002E083 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		13C0F15F219590220002E083 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		13C0F161219593FF0002E083 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		1DCFF60709BE2ED4B3B325C6 /* Pods-MoviewRamaViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviewRamaViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviewRamaViewsTests/Pods-MoviewRamaViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FFD9692F1974D619B57F79F /* Pods_MovieRamaModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4067F5B1962D5CFA13E45822 /* Pods_MovieRamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieRamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -541,11 +561,13 @@
 		13C0EFE22194420A0002E083 /* MovieRama */ = {
 			isa = PBXGroup;
 			children = (
-				13C0F0AD21944C930002E083 /* Resources */,
-				13C0EFE32194420A0002E083 /* AppDelegate.swift */,
-				13C0EFE52194420A0002E083 /* ViewController.swift */,
-				13C0EFEC2194420C0002E083 /* LaunchScreen.storyboard */,
 				13C0EFEF2194420C0002E083 /* Info.plist */,
+				13C0EFEC2194420C0002E083 /* LaunchScreen.storyboard */,
+				13C0EFE32194420A0002E083 /* AppDelegate.swift */,
+				13C0F15321958D090002E083 /* MovieRamaContainer.swift */,
+				13C0F15521958E9F0002E083 /* Extensions */,
+				13C0F0AD21944C930002E083 /* Resources */,
+				13C0F15221958CF00002E083 /* UseCases */,
 			);
 			path = MovieRama;
 			sourceTree = "<group>";
@@ -644,6 +666,8 @@
 		13C0F07E219443130002E083 /* MoviewRamaViews */ = {
 			isa = PBXGroup;
 			children = (
+				13C0F15821958F730002E083 /* Extensions */,
+				13C0F14B2195816C0002E083 /* MovieOverviewCell */,
 				13C0F07F219443130002E083 /* MoviewRamaViews.h */,
 				13C0F080219443130002E083 /* Info.plist */,
 			);
@@ -718,6 +742,7 @@
 			children = (
 				13C0F0BA2194534D0002E083 /* Dictionary.swift */,
 				13C0F0C221945AAF0002E083 /* SignalProcuder+JSONDecodable.swift */,
+				13C0F161219593FF0002E083 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -875,6 +900,43 @@
 				13C0F1322194CD950002E083 /* MovieLocalProvider.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		13C0F14B2195816C0002E083 /* MovieOverviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F14C2195818B0002E083 /* MovieOverviewCell.swift */,
+				13C0F14E219581B10002E083 /* MovieOverviewCellDriver.swift */,
+				13C0F1502195867A0002E083 /* MovieOverviewCell.xib */,
+			);
+			path = MovieOverviewCell;
+			sourceTree = "<group>";
+		};
+		13C0F15221958CF00002E083 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		13C0F15521958E9F0002E083 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F15621958ED50002E083 /* UIApplication.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13C0F15821958F730002E083 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13C0F15921958FA80002E083 /* UITableViewCell.swift */,
+				13C0F15B21958FB70002E083 /* UICollectionViewCell.swift */,
+				13C0F15D21958FD80002E083 /* UITableView.swift */,
+				13C0F15F219590220002E083 /* UICollectionView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CC6EC5CB0DE3B5BD3D4017A1 /* Pods */ = {
@@ -1221,6 +1283,7 @@
 					};
 					13C0F07C219443130002E083 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					13C0F084219443130002E083 = {
 						CreatedOnToolsVersion = 10.1;
@@ -1328,6 +1391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F1512195867A0002E083 /* MovieOverviewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1839,8 +1903,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F15721958ED50002E083 /* UIApplication.swift in Sources */,
 				13C0F0B3219451260002E083 /* Storyboard.swift in Sources */,
-				13C0EFE62194420A0002E083 /* ViewController.swift in Sources */,
+				13C0EFE62194420A0002E083 /* PopularMovieListViewController.swift in Sources */,
+				13C0F15421958D090002E083 /* MovieRamaContainer.swift in Sources */,
 				13C0EFE42194420A0002E083 /* AppDelegate.swift in Sources */,
 				13C0F0B2219451260002E083 /* Assets.swift in Sources */,
 			);
@@ -1874,6 +1940,7 @@
 				13C0F0C321945AAF0002E083 /* SignalProcuder+JSONDecodable.swift in Sources */,
 				13C0F0B6219452D60002E083 /* JSONDecodable.swift in Sources */,
 				13C0F12F2194A47C0002E083 /* LocalProviderError.swift in Sources */,
+				13C0F162219593FF0002E083 /* Date.swift in Sources */,
 				13C0F0BB2194534D0002E083 /* Dictionary.swift in Sources */,
 				13C0F0C521945AD80002E083 /* RemoteProviderError.swift in Sources */,
 			);
@@ -1969,6 +2036,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0F160219590220002E083 /* UICollectionView.swift in Sources */,
+				13C0F15A21958FA80002E083 /* UITableViewCell.swift in Sources */,
+				13C0F14D2195818B0002E083 /* MovieOverviewCell.swift in Sources */,
+				13C0F15E21958FD80002E083 /* UITableView.swift in Sources */,
+				13C0F15C21958FB70002E083 /* UICollectionViewCell.swift in Sources */,
+				13C0F14F219581B10002E083 /* MovieOverviewCellDriver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2355,6 +2428,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MovieRamaCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2386,6 +2460,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MovieRamaCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2458,6 +2533,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MovieRamaModels/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2489,6 +2565,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MovieRamaModels/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2561,6 +2638,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MovieRamaViewModels/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2592,6 +2670,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MovieRamaViewModels/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2653,6 +2732,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E745736CDAB31C92AC4B136 /* Pods-MoviewRamaViews.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2663,6 +2743,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MoviewRamaViews/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2671,6 +2752,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.MoviewRamaViews;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2682,6 +2764,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B05C20C28C67028A17B5A760 /* Pods-MoviewRamaViews.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2692,6 +2775,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MoviewRamaViews/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

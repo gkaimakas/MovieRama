@@ -16,6 +16,7 @@ public struct Movie {
     public let genres: [Genre]
     public let posterURL: URL?
     public let credits: Credits
+    public let voteAverage: Double
     public let isFavorite: Bool
     
     public init(id: Int,
@@ -25,6 +26,7 @@ public struct Movie {
                 genres: [Genre],
                 posterURL: URL?,
                 credits: Credits,
+                voteAverage: Double,
                 isFavorite: Bool = false) {
         
         self.id = id
@@ -34,6 +36,7 @@ public struct Movie {
         self.genres = genres
         self.posterURL = posterURL
         self.credits = credits
+        self.voteAverage = voteAverage
         self.isFavorite = isFavorite
     }
     
@@ -45,6 +48,7 @@ public struct Movie {
                      genres: genres,
                      posterURL: posterURL,
                      credits: credits,
+                     voteAverage: voteAverage,
                      isFavorite: favorite)
     }
 }
@@ -59,6 +63,7 @@ extension Movie {
         static let overview = "overview"
         static let genres = "genres"
         static let posterURL = "poster_path"
+        static let voteAverage = "vote_average"
         static let credits = "credits"
     }
 }

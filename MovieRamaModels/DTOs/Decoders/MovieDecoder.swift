@@ -31,7 +31,8 @@ class MovieDecoder: MovieRamaCommon.JSONDecoder<Movie> {
                      overview: try? json.string(key: Movie.Keys.overview),
                      genres: genres,
                      posterURL: try? json.url(key: Movie.Keys.posterURL),
-                     credits: credits)
+                     credits: credits,
+                     voteAverage: try json.double(key: Movie.Keys.voteAverage))
         
     }
 }

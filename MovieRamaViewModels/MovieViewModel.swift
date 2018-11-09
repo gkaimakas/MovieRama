@@ -17,6 +17,7 @@ public class MovieViewModel {
     let _genres: MutableProperty<[GenreViewModel]>
     let _cast: MutableProperty<[CastMemberViewModel]>
     let _crew: MutableProperty<[CrewMemberViewModel]>
+    let _voteAverage: MutableProperty<Double>
     let _isFavorite: MutableProperty<Bool>
     
     public let title: Property<String?>
@@ -26,6 +27,8 @@ public class MovieViewModel {
     public let posterURL: Property<URL?>
     public let cast: Property<[CastMemberViewModel]>
     public let crew: Property<[CrewMemberViewModel]>
+    public let voteAverage: Property<Double>
+    public let releasedAt: Property<Date?>
     
     public let isFavorite: Property<Bool>
     
@@ -33,7 +36,7 @@ public class MovieViewModel {
     public let reviews: ReviewListViewModel
     
     public let fetchInfo: Action<Void, Info, ProviderError>
-    public let favorite: Action<Bool, Bool, ProviderError>
+    public let toggleFavorite: Action<Void, Bool, ProviderError>
     
     public init(raw: MovieOverview,
                 movieProvider: MovieProviderProtocol) {
@@ -55,6 +58,11 @@ public class MovieViewModel {
         _crew = MutableProperty([])
         crew = Property(_crew)
         
+        _voteAverage = MutableProperty(raw.voteAverage)
+        voteAverage = Property(_voteAverage)
+        
+        releasedAt = Property(value: raw.releasedAt)
+        
         _isFavorite = MutableProperty(raw.isFavorite)
         isFavorite = Property(_isFavorite)
         
@@ -73,7 +81,7 @@ public class MovieViewModel {
                 .map { Info($0) }
         }
         
-        favorite = Action { value in
+        toggleFavorite = Action (state: isFavorite.negate()) { value in
             if value == true {
                 return movieProvider
                     .addToFavorites(movieId: raw.id)
@@ -101,7 +109,11 @@ public class MovieViewModel {
             .values
             .map { $0.crew.value }
         
-        _isFavorite <~ favorite
+        _voteAverage <~ fetchInfo
+            .values
+            .map { $0.voteAverage.value }
+        
+        _isFavorite <~ toggleFavorite
             .values
         
         _isFavorite <~ fetchInfo
@@ -125,6 +137,7 @@ extension MovieViewModel {
         public let posterURL: Property<URL?>
         public let cast: Property<[CastMemberViewModel]>
         public let crew: Property<[CrewMemberViewModel]>
+        public let voteAverage: Property<Double>
         public let isFavorite: Property<Bool>
         
         init(_ raw: Movie) {
@@ -137,6 +150,8 @@ extension MovieViewModel {
             
             cast = Property(value: raw.credits.cast.map { CastMemberViewModel(raw: $0) })
             crew = Property(value: raw.credits.crew.map { CrewMemberViewModel(raw: $0) })
+            
+            voteAverage = Property(value: raw.voteAverage)
             
             isFavorite = Property(value: raw.isFavorite)
         }
