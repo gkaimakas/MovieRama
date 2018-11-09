@@ -618,15 +618,15 @@
 			children = (
 				13C0F05D219443020002E083 /* MovieRamaViewModels.h */,
 				13C0F05E219443020002E083 /* Info.plist */,
-				13C0F1422194F3DF0002E083 /* PopularMovieListViewModel.swift */,
-				13C0F1252194A12A0002E083 /* MovieViewModel.swift */,
-				13C0F1362194E5DF0002E083 /* SimilarMovieListViewModel.swift */,
-				13C0F13A2194E94F0002E083 /* ReviewListViewModel.swift */,
-				13C0F1382194E8DA0002E083 /* ReviewViewModel.swift */,
-				13C0F13C2194EF930002E083 /* GenreViewModel.swift */,
-				13C0F13E2194F0300002E083 /* CrewMemberViewModel.swift */,
 				13C0F1402194F09A0002E083 /* CastMemberViewModel.swift */,
+				13C0F13E2194F0300002E083 /* CrewMemberViewModel.swift */,
+				13C0F13C2194EF930002E083 /* GenreViewModel.swift */,
+				13C0F1252194A12A0002E083 /* MovieViewModel.swift */,
+				13C0F1422194F3DF0002E083 /* PopularMovieListViewModel.swift */,
+				13C0F1382194E8DA0002E083 /* ReviewViewModel.swift */,
+				13C0F13A2194E94F0002E083 /* ReviewListViewModel.swift */,
 				13C0F147219573E30002E083 /* SearchMovieListViewModel.swift */,
+				13C0F1362194E5DF0002E083 /* SimilarMovieListViewModel.swift */,
 			);
 			path = MovieRamaViewModels;
 			sourceTree = "<group>";
@@ -757,16 +757,16 @@
 		13C0F0CB21945DB20002E083 /* Inbound */ = {
 			isa = PBXGroup;
 			children = (
-				13C0F0F9219482E80002E083 /* ProductionCompany.swift */,
-				13C0F0FD219484810002E083 /* ProductionCountry.swift */,
-				13C0F101219485880002E083 /* Genre.swift */,
-				13C0F1052194864A0002E083 /* SpokenLanguage.swift */,
 				13C0F109219487D30002E083 /* CastMember.swift */,
-				13C0F10D21948A780002E083 /* CrewMember.swift */,
 				13C0F11121948B820002E083 /* Credits.swift */,
+				13C0F10D21948A780002E083 /* CrewMember.swift */,
+				13C0F101219485880002E083 /* Genre.swift */,
 				13C0F11521948F4C0002E083 /* Movie.swift */,
 				13C0F0CF219462C50002E083 /* MovieOverview.swift */,
+				13C0F0F9219482E80002E083 /* ProductionCompany.swift */,
+				13C0F0FD219484810002E083 /* ProductionCountry.swift */,
 				13C0F11C21949A2A0002E083 /* Review.swift */,
+				13C0F1052194864A0002E083 /* SpokenLanguage.swift */,
 			);
 			path = Inbound;
 			sourceTree = "<group>";
@@ -774,18 +774,18 @@
 		13C0F0CC21945DC60002E083 /* Decoders */ = {
 			isa = PBXGroup;
 			children = (
+				13C0F10B219489C30002E083 /* CastMemberDecoder.swift */,
+				13C0F11321948C0A0002E083 /* CreditsDecoder.swift */,
+				13C0F10F21948B0E0002E083 /* CrewMemberDecoder.swift */,
+				13C0F103219485E40002E083 /* GenreDecoder.swift */,
+				13C0F117219494610002E083 /* MovieDecoder.swift */,
 				13C0F0D12194665F0002E083 /* MovieOverviewDecoder.swift */,
 				13C0F0D321946A080002E083 /* PagedMovieOverviewDecoder.swift */,
+				13C0F12021949B010002E083 /* PagedReviewDecoder.swift */,
 				13C0F0FB219483930002E083 /* ProductionCompanyDecoder.swift */,
 				13C0F0FF219484E30002E083 /* ProductionCountryDecoder.swift */,
-				13C0F103219485E40002E083 /* GenreDecoder.swift */,
-				13C0F107219486DA0002E083 /* SpokenLanguageDecoder.swift */,
-				13C0F10B219489C30002E083 /* CastMemberDecoder.swift */,
-				13C0F10F21948B0E0002E083 /* CrewMemberDecoder.swift */,
-				13C0F11321948C0A0002E083 /* CreditsDecoder.swift */,
-				13C0F117219494610002E083 /* MovieDecoder.swift */,
 				13C0F11E21949AB10002E083 /* ReviewDecoder.swift */,
-				13C0F12021949B010002E083 /* PagedReviewDecoder.swift */,
+				13C0F107219486DA0002E083 /* SpokenLanguageDecoder.swift */,
 			);
 			path = Decoders;
 			sourceTree = "<group>";
@@ -806,9 +806,9 @@
 		13C0F0E0219476C20002E083 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				13C0F0E5219478360002E083 /* Movie */,
-				13C0F0E1219476EB0002E083 /* RemoteProvider.swift */,
 				13C0F0E9219479070002E083 /* APIConfig.swift */,
+				13C0F0E1219476EB0002E083 /* RemoteProvider.swift */,
+				13C0F0E5219478360002E083 /* Movie */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -844,8 +844,8 @@
 		13C0F0F221947C610002E083 /* Decoders */ = {
 			isa = PBXGroup;
 			children = (
-				13C0F0D521946ED10002E083 /* PagedMovieOverviewDecoderSpec.swift */,
 				13C0F119219496C60002E083 /* MovieDecoderSpec.swift */,
+				13C0F0D521946ED10002E083 /* PagedMovieOverviewDecoderSpec.swift */,
 				13C0F12221949ECA0002E083 /* PagedReviewDecoderSpec.swift */,
 			);
 			path = Decoders;
@@ -862,8 +862,8 @@
 		13C0F0F521947C8F0002E083 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				13C0F0F621947C9C0002E083 /* MovieRemoteProviderSpec.swift */,
 				13C0F1342194CFDC0002E083 /* MovieLocalProviderSpec.swift */,
+				13C0F0F621947C9C0002E083 /* MovieRemoteProviderSpec.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
