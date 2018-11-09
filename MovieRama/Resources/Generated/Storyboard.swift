@@ -18,6 +18,8 @@ internal enum StoryboardScene {
     internal static let initialScene = InitialSceneType<UIKit.UINavigationController>(storyboard: Main.self)
 
     internal static let popularMovieListViewController = SceneType<MovieRama.PopularMovieListViewController>(storyboard: Main.self, identifier: "PopularMovieListViewController")
+
+    internal static let searchMovieListViewController = SceneType<MovieRama.SearchMovieListViewController>(storyboard: Main.self, identifier: "SearchMovieListViewController")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

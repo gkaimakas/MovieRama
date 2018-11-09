@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  SearchMovieListViewController.swift
 //  MovieRama
 //
-//  Created by George Kaimakas on 08/11/2018.
+//  Created by George Kaimakas on 09/11/2018.
 //  Copyright © 2018 George Kaimakas. All rights reserved.
 //
 
@@ -15,46 +15,21 @@ import ReactiveSwift
 import Result
 import UIKit
 
-class PopularMovieListViewController: UIViewController {
+class SearchMovieListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    var viewModel: PopularMovieListViewModel!
-    var searchViewModel: SearchMovieListViewModel!
+    var viewModel: SearchMovieListViewModel!
     var diffCalculator: CollectionViewDiffCalculator<String, Row>!
-    let refreshControl = UIRefreshControl()
-    var searchController: UISearchController!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel = UIApplication.inject(PopularMovieListViewModel.self)
-        searchViewModel = UIApplication.inject(SearchMovieListViewModel.self)
-        searchController = UISearchController(searchResultsController: StoryboardScene
-            .Main
-            .searchMovieListViewController
-            .instantiate()
-        )
-        
-        searchViewModel.query <~ searchController
-            .searchBar
-            .reactive
-            .continuousTextValues
-        
-        searchController.dimsBackgroundDuringPresentation = false
-        searchController.hidesNavigationBarDuringPresentation = false
-        navigationController?.definesPresentationContext = false
-        
-        navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
-        definesPresentationContext = true
+        viewModel = UIApplication.inject(SearchMovieListViewModel.self)
         diffCalculator = CollectionViewDiffCalculator<String, Row>(collectionView: collectionView)
         
         collectionView.register(MovieOverviewCell.self)
         collectionView.register(LoadingCollectionCell.self)
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.addSubview(refreshControl)
-        
-        refreshControl.reactive.refresh = CocoaAction(viewModel.forceFetchMovies)
         
         viewModel
             .movies
@@ -62,31 +37,15 @@ class PopularMovieListViewController: UIViewController {
             .map { list -> [Row] in
                 return list.map { Row.movie($0) }
             }
-            .combineLatest(with: viewModel
-                .fetchMovies
-                .isExecuting
-                .producer
-                .map { isLoading -> [Row] in
-                    return isLoading == true ? [.isLoading] : []
-                }
-            )
             .observe(on: UIScheduler())
-            .map { $0.0 + $0.1 }
             .on(value: { [weak self] rows in
                 self?.diffCalculator.sectionedValues = SectionedValues([("", rows)])
             })
             .start()
-        
-        
-        
-        viewModel
-            .fetchMovies
-            .apply()
-            .start()
     }
 }
 
-extension PopularMovieListViewController: UICollectionViewDataSource {
+extension SearchMovieListViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return diffCalculator.numberOfSections()
     }
@@ -108,19 +67,28 @@ extension PopularMovieListViewController: UICollectionViewDataSource {
     }
 }
 
-extension PopularMovieListViewController: UICollectionViewDelegate {
+extension SearchMovieListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
-        if indexPath.item == viewModel.movies.value.count - 1 {
+        if indexPath.item == viewModel.movies.value.count - 1
+            && viewModel.fetchMovies.isEnabled.value == true {
             viewModel
                 .fetchMovies
                 .apply()
                 .start()
         }
+        
+        switch diffCalculator.value(atIndexPath: indexPath) {
+        case .movie(let movie):
+            if let cell = cell as? MovieOverviewCell {
+                cell.viewModel = movie
+            }
+        case .isLoading:
+            break
+        }
     }
 }
 
-extension PopularMovieListViewController: UICollectionViewDelegateFlowLayout {
+extension SearchMovieListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch diffCalculator.value(atIndexPath: indexPath) {
         case .movie(let movie):
@@ -150,4 +118,3 @@ extension PopularMovieListViewController: UICollectionViewDelegateFlowLayout {
         return 8
     }
 }
-

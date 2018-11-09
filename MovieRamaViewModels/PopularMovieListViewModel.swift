@@ -61,6 +61,6 @@ public class PopularMovieListViewModel {
         
         _currentPage <~ forceFetchMovies
             .values
-            .map { _ in 1 }
+            .map { _ in 2 }
     }
 }

@@ -29,6 +29,8 @@ public class MovieOverviewCell: MDCCardCollectionCell {
             imageView.reactive.urlImage <~ viewModel
                 .backdropURL
                 .producer
+                .take(until: reactive.prepareForReuse)
+                .observe(on: UIScheduler())
                 .skipNil()
                 .map { $0.backdrop(width: .w780) }
                 .map { ($0, nil) }
@@ -37,17 +39,20 @@ public class MovieOverviewCell: MDCCardCollectionCell {
             titleLabel.reactive.text <~ viewModel
                 .title
                 .producer
+                .observe(on: UIScheduler())
                 .take(until: reactive.prepareForReuse)
             
             releasedAtLabel.reactive.text <~ viewModel
                 .releasedAt
                 .producer
+                .observe(on: UIScheduler())
                 .take(until: reactive.prepareForReuse)
                 .string(format: "d MMM YYYY")
             
             voteAverageLevel.reactive.attributedText <~ viewModel
                 .voteAverage
                 .producer
+                .observe(on: UIScheduler())
                 .take(until: reactive.prepareForReuse)
                 .map { value -> NSAttributedString in
                     let intValue = Int(value/2)
@@ -70,6 +75,7 @@ public class MovieOverviewCell: MDCCardCollectionCell {
             toggleFavoriteButton.reactive.image <~ viewModel
                 .isFavorite
                 .producer
+                .observe(on: UIScheduler())
                 .take(until: reactive.prepareForReuse)
                 .map { $0 ? ViewAssets.favoriteBlack36pt.image : ViewAssets.favoriteBorderBlack36pt.image }
             
@@ -84,6 +90,11 @@ public class MovieOverviewCell: MDCCardCollectionCell {
         shadowElevation(for: MDCCardCellState.highlighted)
         imageView.layer.cornerRadius = cornerRadius
         wrapperView.round(corners: [.bottomLeft, .bottomRight], radius: cornerRadius)
+    }
+    
+    override public func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.image = nil
     }
     
 }

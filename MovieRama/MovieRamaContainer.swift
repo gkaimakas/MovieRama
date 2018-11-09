@@ -30,6 +30,14 @@ class MovieRamaContainer {
                 return PopularMovieListViewModel(movieProvider: r.resolve(MovieProviderProtocol.self)!)
             }
             .inObjectScope(.container)
+        
+        container
+            .register(SearchMovieListViewModel.self) { r in
+                return SearchMovieListViewModel(movieProvider: r.resolve(MovieProviderProtocol.self)!)
+            }
+            .inObjectScope(.container)
+        
+        
             
     }
     

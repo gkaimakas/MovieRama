@@ -71,17 +71,23 @@ public class SearchMovieListViewModel {
         
         _currentPage <~ query
             .producer
-            .map { $0 == nil ? 1 : 2 }
+            .map { _ in 2 }
         
         _movies <~ query
             .producer
-            .flatMap(.latest) { q -> SignalProducer<[MovieViewModel], ProviderError> in
-                guard let q = q else {
+            .throttle(3, on: QueueScheduler.main)
+            .flatMap(.latest) { q -> SignalProducer<[MovieViewModel], NoError> in
+                guard let q = q,
+                    q.isEmpty == false else {
                     return movieProvider
                         .fetchPopularMovieList(page: 1)
                         .map { $0.results }
                         .map { list -> [MovieViewModel] in
                             return list.map { MovieViewModel(raw: $0, movieProvider: movieProvider) }
+                        }
+                        .flatMapError { err -> SignalProducer<[MovieViewModel], NoError> in
+                            self._initialSearchErrorObserver.send(value: err)
+                            return SignalProducer.empty
                         }
                 }
                 
@@ -90,7 +96,11 @@ public class SearchMovieListViewModel {
                     .map { $0.results }
                     .map { list -> [MovieViewModel] in
                         return list.map { MovieViewModel(raw: $0, movieProvider: movieProvider) }
-                }
+                    }
+                    .flatMapError { err -> SignalProducer<[MovieViewModel], NoError> in
+                        self._initialSearchErrorObserver.send(value: err)
+                        return SignalProducer.empty
+                    }
             }
             .on(started: { [unowned self] in
                     self._isExecutingObserver.send(value: true)
@@ -99,9 +109,8 @@ public class SearchMovieListViewModel {
                     switch event {
                     case .completed:
                         self._isExecutingObserver.send(value: false)
-                    case .failed(let err):
+                    case .failed:
                         self._isExecutingObserver.send(value: false)
-                        self._initialSearchErrorObserver.send(value: err)
                     case .interrupted:
                         self._isExecutingObserver.send(value: false)
                     case .value:
@@ -118,8 +127,5 @@ public class SearchMovieListViewModel {
                     self._isExecutingObserver.send(value: false)
                 }
             )
-            .flatMapError { _ -> SignalProducer<[MovieViewModel], NoError> in
-                return SignalProducer.empty
-            }
     }
 }

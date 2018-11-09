@@ -12,6 +12,8 @@
 		1322A5A72195D5A200BFED7D /* URL+TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5A62195D5A200BFED7D /* URL+TMDB.swift */; };
 		1322A5A92195D97800BFED7D /* UIImageView+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5A82195D97800BFED7D /* UIImageView+Reactive.swift */; };
 		1322A5AB2195DB7F00BFED7D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5AA2195DB7F00BFED7D /* UIView.swift */; };
+		1322A5AE2195DFB300BFED7D /* SearchMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5AD2195DFB300BFED7D /* SearchMovieListViewController.swift */; };
+		1322A5B02195DFFE00BFED7D /* SearchMovieListViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322A5AF2195DFFE00BFED7D /* SearchMovieListViewController+Row.swift */; };
 		13C0EFE42194420A0002E083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE32194420A0002E083 /* AppDelegate.swift */; };
 		13C0EFE62194420A0002E083 /* PopularMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */; };
 		13C0EFE92194420A0002E083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0EFE72194420A0002E083 /* Main.storyboard */; };
@@ -290,6 +292,8 @@
 		1322A5A62195D5A200BFED7D /* URL+TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+TMDB.swift"; sourceTree = "<group>"; };
 		1322A5A82195D97800BFED7D /* UIImageView+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Reactive.swift"; sourceTree = "<group>"; };
 		1322A5AA2195DB7F00BFED7D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		1322A5AD2195DFB300BFED7D /* SearchMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieListViewController.swift; sourceTree = "<group>"; };
+		1322A5AF2195DFFE00BFED7D /* SearchMovieListViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchMovieListViewController+Row.swift"; sourceTree = "<group>"; };
 		13C0EFE02194420A0002E083 /* MovieRama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieRama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0EFE32194420A0002E083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C0EFE52194420A0002E083 /* PopularMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieListViewController.swift; sourceTree = "<group>"; };
@@ -541,6 +545,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1322A5AC2195DF8F00BFED7D /* SearchMovies */ = {
+			isa = PBXGroup;
+			children = (
+				1322A5AD2195DFB300BFED7D /* SearchMovieListViewController.swift */,
+				1322A5AF2195DFFE00BFED7D /* SearchMovieListViewController+Row.swift */,
+			);
+			path = SearchMovies;
+			sourceTree = "<group>";
+		};
 		13C0EFD72194420A0002E083 = {
 			isa = PBXGroup;
 			children = (
@@ -934,6 +947,7 @@
 		13C0F15221958CF00002E083 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				1322A5AC2195DF8F00BFED7D /* SearchMovies */,
 				13C0F1642195BD510002E083 /* PopularMovies */,
 			);
 			path = UseCases;
@@ -1988,12 +2002,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C0F15721958ED50002E083 /* UIApplication.swift in Sources */,
+				1322A5B02195DFFE00BFED7D /* SearchMovieListViewController+Row.swift in Sources */,
 				13C0F0B3219451260002E083 /* Storyboard.swift in Sources */,
 				13C0EFE62194420A0002E083 /* PopularMovieListViewController.swift in Sources */,
 				13C0F15421958D090002E083 /* MovieRamaContainer.swift in Sources */,
 				13C0EFE42194420A0002E083 /* AppDelegate.swift in Sources */,
 				13C0F1662195BD720002E083 /* PopularMovieListViewController+Row.swift in Sources */,
 				13C0F0B2219451260002E083 /* Assets.swift in Sources */,
+				1322A5AE2195DFB300BFED7D /* SearchMovieListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
