@@ -20,6 +20,8 @@ public class MovieViewModel {
     let _voteAverage: MutableProperty<Double>
     let _isFavorite: MutableProperty<Bool>
     
+    public let uniqueIdentifier = UUID()
+    
     public let id: Property<Int>
     public let title: Property<String?>
     public let originalTitle: Property<String?>
@@ -169,5 +171,6 @@ extension MovieViewModel: Equatable {
     public static func ==(lhs: MovieViewModel, rhs: MovieViewModel) -> Bool {
         return lhs.id.value == rhs.id.value
             && lhs._infoState.value == rhs._infoState.value
+            && lhs.uniqueIdentifier == rhs.uniqueIdentifier
     }
 }
